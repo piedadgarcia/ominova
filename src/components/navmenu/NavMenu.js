@@ -49,7 +49,7 @@ function NavMenu() {
         flex: 0.8 // Asigna menos espacio a este componente
       }}>
         
-        <Link to="/info" className='bold-pointer'> 
+        <Link to="/agencia" className='bold-pointer'> 
           La agencia
         </Link>
         <Link to="/info" className='bold-pointer'>
@@ -58,7 +58,7 @@ function NavMenu() {
         <Link to="/miservicios" className='bold-pointer'>
           Servicios
         </Link>
-        <Link to="/info" className='bold-pointer'>
+        <Link to="/casos-exito" className='bold-pointer'>
           Casos de éxito
         </Link>
         <Link to="/info" className='bold-pointer'>

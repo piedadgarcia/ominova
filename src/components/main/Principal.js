@@ -7,7 +7,7 @@ import Info from './../info/Info';
 import Micomponente from './../micomponente/Micomponente';  
 */
 import Mi2componente from './../mi2componente/Mi2componente';
-import Mi3Componente from './../mi3Componente/Mi3Componente';
+import Mi3Componente from './../mi3componente/Mi3Componente';
 import NavMenu from './../navmenu/NavMenu';
 
 function Principal() {
