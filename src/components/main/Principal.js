@@ -1,14 +1,14 @@
 import React from 'react';
 import './../../App.css';
 import Home from './../home/Home';
-import Info from './../info/Info';  
+import Info from './../info/Info';
 // omentario de bloque para excluir la importación de Micomponente
 /*
 import Micomponente from './../micomponente/Micomponente';  
 */
 import Mi2componente from './../mi2componente/Mi2componente';
-import NavMenu from './../navmenu/NavMenu';
 import Mi3Componente from './../mi3componente/Mi3Componente';
+import NavMenu from './../navmenu/NavMenu';
 
 function Principal() {
   return (
