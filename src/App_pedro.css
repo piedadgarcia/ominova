@@ -1,0 +1,2209 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.texto-azul {
+  color: blue;
+}
+.texto-verde {
+  color: rgb(10, 58, 36);
+}
+
+.imagen-ejemplo {
+  width: 200px;
+  position: absolute;
+  top: 150px;
+  left: 800px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .imagen-ejemplo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.shape {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.square {
+  background-color: red;
+}
+.circle {
+  background-color: green;
+  border-radius: 50%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid blue;
+  background-color: transparent;
+}
+.rectangle {
+  background-color: purple;
+  width: 150px;
+  height: 75px;
+}
+
+
+
+.parrafo-nuevo {
+  color: red;
+}
+
+.bold-pointer {
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #e9ebe0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(4, 4, 236);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.mi4-componente {
+  display: flex;
+  align-items: flex-start;/* Alinea los elementos al inicio verticalmente */
+  justify-content: flex-start;
+}
+
+.imagen-ejemplo {
+  margin-left: auto;
+  width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+}
+.imagen-pequena {
+  width: 400px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
+.texto-grande {
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+}
+.texto-ajustado {
+  max-width: 70ch; /* Limita el ancho del párrafo a 70 caracteres */
+  margin: 0; /* Alinea el párrafo a la izquierda */
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+}
+.texto-contenedor {
+  flex: 1; /* Permite que el contenedor de texto ocupe el espacio disponible */
+  text-align: left;/* Alinea el texto a la izquierda */
+}
+.texto-centrado {
+  text-align: left;/* Alinea el texto a la izquierda */
+  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+}
+.mi5-componente {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+
+.texto-centro-grande-negrita {
+  font-size: 36px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  text-align: center;
+}
+.texto-centro-normal {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  text-align: center;
+  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+}
+.mi6-componente {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinea los elementos al centro verticalmente */
+  height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+.video-centro {
+  width: 80%; /* Ajusta el tamaño del video según sea necesario */
+  max-width: 600px; /* Ajusta el tamaño máximo del video según sea necesario */
+}
+.imagen-centro {
+  width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+  max-width: 600px; /* Ajusta el tamaño máximo de la imagen según sea necesario */
+  height: auto;
+}
+.lista-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 20px; /* Espacio entre la lista y la imagen */
+}
+.texto-negrita {
+  font-weight: bold;
+  margin-bottom: 20px; /* Espacio entre los elementos de la lista */
+}
+
+.imagen-centro {
+  width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+  max-width: 600px; /* Ajusta el tamaño máximo de la imagen según sea necesario */
+  height: auto;
+}
+.texto-normal {
+  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  max-width: 70ch; /* Limita el ancho del párrafo a 70 caracteres */
+  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+  margin-top: -10px; /* Ajusta este valor para mover el texto más arriba */
+}
+
+.texto-negrita-grande {
+  font-weight: bold;
+  font-size: 18px; /* Ajusta el tamaño del texto según sea necesario */
+  margin-bottom: 20px; /* Espacio entre los elementos de la lista */
+  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+}
+.imagen-derecha {
+  width: 450px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-left: 20px; /* Espacio entre el texto y la imagen */
+  border-radius: 50%; /* Aplica la forma de elipse */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro de la elipse */
+}
+.lista-izquierda, .lista-derecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 20px; /* Espacio entre la imagen y las listas */
+}
+.imagen-centro {
+  width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+  max-width: 600px; /* Ajusta el tamaño máximo de la imagen según sea necesario */
+  height: auto;
+}
+.mi7-componente {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  justify-content: flex-start;
+}
+.texto-negro {
+  color: black;
+}
+.mi8-componente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.video-centro {
+  width: 30%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.mi8-componente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.video-centro {
+  width: 30%; /* Ajusta el tamaño del video según sea necesario */
+  max-width: 400px; /* Ajusta el tamaño máximo del video según sea necesario */
+  height: auto;
+  margin-right: 20px; /* Espacio entre el video y el texto */
+}
+.texto-derecha {
+  max-width: 60%; /* Ajusta el ancho del texto según sea necesario */
+  font-size: 16px;
+  text-align: left;
+}
+.texto-izquierda {
+  margin-right: 20px; /* Espacio entre el texto y el contenido adicional */
+}
+
+
+.texto-azul-grande {
+  color: blue;
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+.texto-negrita-espaciado {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.texto-normal-espaciado {
+  margin-top: 20px; /* Espacio superior */
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-images {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+}
+
+.carousel-image {
+  width: 33.33%;
+  height: auto;
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+}
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.carousel-dot.active {
+  background-color: black;
+}
+.video-texto-contenedor {
+  display: flex;
+  justify-content: flex-start; /* Alinea el contenido al inicio horizontalmente */
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+.texto-grande-negrita {
+  font-size: 32px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+}
+
+.mi9-componente {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+.filtros {
+  display: flex;
+  gap: 10px; /* Espacio entre los filtros */
+}
+
+.filtro {
+  padding: 5px 15px;
+  border: 2px solid #000;
+  border-radius: 25px; /* Hace que el borde sea elipsoidal */
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  cursor: pointer;
+}
+.texto-azul {
+  color: blue;
+}
+
+.texto-verde {
+  color: green;
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px; /* Espacio superior */
+}
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.nuestros-servicios {
+  margin-top: 20px; /* Espacio superior */
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+.texto-azul {
+  color: blue;
+}
+
+.texto-verde {
+  color: green;
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre el botón y el texto */
+}
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.nuestros-servicios {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.botones-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Espacio superior */
+}
+.texto-azul-centro {
+  color: blue;
+  text-align: center;
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.texto-verde {
+  color: green;
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre el botón y el texto */
+}
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.nuestros-servicios {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.botones-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Espacio superior */
+}
+.texto-azul-centro {
+  color: blue;
+  text-align: center;
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.texto-verde {
+  color: green;
+  margin-top: 20px; /* Espacio superior para separar del botón */
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre el botón y el texto */
+}
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.nuestros-servicios {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.botones-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Espacio superior */
+}
+.texto-azul-centro {
+  color: blue;
+  text-align: center;
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.botones-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Espacio superior */
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre el botón y el texto */
+}
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.nuestros-servicios {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.texto-verde-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Ocupa la mitad de la pantalla */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.texto-verde {
+  color: green;
+  margin-bottom: 20px; /* Espacio inferior */
+}
+.imagen-ejemplo {
+  margin-left: 20px; /* Ajusta este valor según sea necesario para desplazar la imagen a la derecha */
+}
+.contenedor-imagen {
+  display: flex;
+  justify-content: flex-start; /* Alinea la imagen a la izquierda */
+  align-items: flex-start; /* Alinea la imagen hacia arriba */
+  height: 100vh; /* Ajusta la altura del contenedor según sea necesario */
+}
+
+.imagen-ejemplo {
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover la imagen más arriba */
+  margin-left: 20px; /* Ajusta este valor según sea necesario para mover la imagen a la izquierda */
+}
+.imagen-ejemplo {
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover la imagen más arriba */
+  margin-left: 20px; /* Ajusta este valor según sea necesario para mover la imagen a la izquierda */
+}
+
+.contenedor-imagen {
+  display: flex;
+  justify-content: flex-start; /* Alinea la imagen a la izquierda */
+  align-items: flex-start; /* Alinea la imagen hacia arriba */
+  height: 100vh; /* Ajusta la altura del contenedor según sea necesario */
+}
+.texto-azul-centro {
+  color: blue;
+  text-align: center;
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.botones-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Espacio superior */
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre el botón y el texto */
+}
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.nuestros-servicios {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.texto-verde-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Ocupa la mitad de la pantalla */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.texto-verde {
+  color: green;
+  margin-bottom: 20px; /* Espacio inferior */
+}
+.texto-azul-centro {
+  color: blue;
+  text-align: center;
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.botones-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre el botón y el texto */
+}
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.nuestros-servicios {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+  .texto-verde-container {
+    margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  }
+
+
+.texto-verde {
+  color: green;
+  margin-bottom: 20px; /* Espacio inferior */
+}
+.contenedor-imagen-mi1 {
+  display: flex;
+  justify-content: flex-end; /* Alinea la imagen a la derecha */
+  align-items: flex-start; /* Alinea la imagen hacia arriba */
+  height: 100vh; /* Ajusta la altura del contenedor según sea necesario */
+}
+
+.imagen-ejemplo {
+  margin-right: 20px; /* Ajusta este valor según sea necesario para mover la imagen más a la derecha */
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover la imagen más arriba */
+}
+.contenedor-imagen-mi1 {
+  display: flex;
+  justify-content: flex-start; /* Alinea la imagen a la izquierda */
+  align-items: flex-start; /* Alinea la imagen hacia arriba */
+  height: 100vh; /* Ajusta la altura del contenedor según sea necesario */
+}
+
+.imagen-ejemplo {
+  margin-left: 20px; /* Ajusta este valor según sea necesario para mover la imagen más a la izquierda */
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover la imagen más arriba */
+}
+.contenedor-imagen-mi1 {
+  display: flex;
+  justify-content: flex-start; /* Alinea la imagen a la izquierda */
+  align-items: flex-start; /* Alinea la imagen hacia arriba */
+  height: 100vh; /* Ajusta la altura del contenedor según sea necesario */
+}
+
+.imagen-ejemplo {
+  margin-left: 20px; /* Ajusta este valor según sea necesario para mover la imagen más a la derecha */
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover la imagen más arriba */
+}
+.mi3-componente {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.columna-izquierda {
+  flex: 1;
+  margin-right: 20px; /* Espacio entre las columnas */
+}
+
+.columna-derecha {
+  flex: 1;
+}
+
+.texto-azul-centro {
+  color: blue;
+  text-align: center;
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.botones-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre el botón y el texto */
+}
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.nuestros-servicios {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.texto-verde-container {
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+}
+
+.texto-verde {
+  color: green;
+  margin-bottom: 20px; /* Espacio inferior */
+}
+.mi3-componente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto-superior {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre los textos superiores y el contenido inferior */
+}
+
+.texto-azul-centro {
+  color: blue;
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  margin-bottom: 10px; /* Espacio entre el título y los botones */
+}
+
+.botones-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre el botón y el texto */
+}
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.nuestros-servicios {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.texto-verde-container {
+  width: 100%;
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+}
+
+.texto-verde {
+  color: green;
+  margin-bottom: 20px; /* Espacio inferior */
+}
+.mi3-componente {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
+}
+
+.columna-izquierda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+  margin-left: 20px; /* Ajusta este valor según sea necesario para mover los textos más a la izquierda */
+}
+
+.columna-derecha {
+  flex: 1;
+}
+
+.texto-azul-centro {
+  color: blue;
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  margin-bottom: 10px; /* Espacio entre el título y los botones */
+}
+
+.botones-centro {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre el botón y el texto */
+}
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.nuestros-servicios {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.texto-verde-container {
+  margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+}
+
+
+  
+  .columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    margin-left: 40px; /* Ajusta este valor según sea necesario para mover los textos más a la derecha */
+    margin-top: 60px; /* Ajusta este valor según sea necesario para mover los textos más abajo */
+  }
+  
+  .columna-derecha {
+    flex: 1;
+  }
+  
+  .texto-azul-centro {
+    color: blue;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre el título y los botones */
+  }
+  
+  .botones-centro {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+  }
+  
+  .contactanos-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el botón y el texto */
+  }
+  
+  .contactanos-button:hover {
+    background-color: darkblue;
+  }
+  
+  .nuestros-servicios {
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-verde-container {
+    margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  }
+  .mi3-componente {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
+  }
+  
+  .columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    margin-left: 40px; /* Ajusta este valor según sea necesario para mover los textos más a la derecha */
+  }
+  
+  .columna-derecha {
+    flex: 1;
+  }
+  
+  .texto-azul-centro {
+    color: blue;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre el título y los botones */
+  }
+  
+  .botones-centro {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+  }
+  
+  .contactanos-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el botón y el texto */
+  }
+  
+  .contactanos-button:hover {
+    background-color: darkblue;
+  }
+  
+  .nuestros-servicios {
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-verde-container {
+    margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  }
+  
+  .texto-verde {
+    color: green;
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  .mi3-componente {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
+  }
+  
+  .columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    margin-left: 40px; /* Ajusta este valor según sea necesario para mover los textos más a la derecha */
+  }
+  
+  .columna-derecha {
+    flex: 1;
+  }
+  
+  .texto-azul-centro {
+    color: blue;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre el título y los botones */
+  }
+  
+  .botones-centro {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+  }
+  
+  .contactanos-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el botón y el texto */
+  }
+  
+  .contactanos-button:hover {
+    background-color: darkblue;
+  }
+  
+  .nuestros-servicios {
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-verde-container {
+    margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  }
+  
+  .texto-verde {
+    color: green;
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  .mi3-componente {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
+  }
+  
+  .columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    margin-left: 40px; /* Ajusta este valor según sea necesario para mover los textos más a la derecha */
+  }
+  
+  .columna-derecha {
+    flex: 1;
+  }
+  
+  .texto-azul-centro {
+    color: blue;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre el título y los botones */
+  }
+  
+  .botones-centro {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+  }
+  
+  .contactanos-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el botón y el texto */
+  }
+  
+  .contactanos-button:hover {
+    background-color: darkblue;
+  }
+  
+  .nuestros-servicios {
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-verde-container {
+    margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  }
+  
+  .texto-verde {
+    color: green;
+    margin-bottom: 20px; /* Espacio inferior */
+  } 
+  .mi3-componente {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
+  }
+  
+  .columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    margin-left: 40px; /* Ajusta este valor según sea necesario para mover los textos más a la derecha */
+  }
+  
+  .columna-derecha {
+    flex: 1;
+  }
+  
+  .texto-azul-centro {
+    color: blue;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre el título y los botones */
+  }
+  
+  .botones-centro {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+  }
+  
+  .contactanos-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el botón y el texto */
+  }
+  
+  .contactanos-button:hover {
+    background-color: darkblue;
+  }
+  
+  .nuestros-servicios {
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-verde-container {
+    margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  }
+  
+  .texto-verde {
+    color: green;
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  .mi3-componente {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
+  }
+  
+  .columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    margin-left: 40px; /* Ajusta este valor según sea necesario para mover los textos más a la derecha */
+  }
+  
+  .columna-derecha {
+    flex: 1;
+  }
+  
+  .texto-azul-centro {
+    color: blue;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre el título y los botones */
+  }
+  
+  .botones-centro {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+  }
+  
+  .contactanos-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el botón y el texto */
+  }
+  
+  .contactanos-button:hover {
+    background-color: darkblue;
+  }
+  
+  .nuestros-servicios {
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-verde-container {
+    margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  }
+  
+  .texto-verde {
+    color: green;
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  .mi3-componente {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
+  }
+  
+  .columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    margin-left: 40px; /* Ajusta este valor según sea necesario para mover los textos más a la derecha */
+  }
+  
+  .columna-derecha {
+    flex: 1;
+  }
+  
+  .texto-azul-centro {
+    color: blue;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre el título y los botones */
+  }
+  
+  .botones-centro {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+  }
+  
+  .contactanos-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el botón y el texto */
+  }
+  
+  .contactanos-button:hover {
+    background-color: darkblue;
+  }
+  
+  .nuestros-servicios {
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-verde-container {
+    margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  }
+  
+  .texto-verde {
+    color: green;
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  .mi3-componente {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
+  }
+  
+  .columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    margin-left: 40px; /* Ajusta este valor según sea necesario para mover los textos más a la derecha */
+  }
+  
+  .columna-derecha {
+    flex: 1;
+  }
+  
+  .texto-azul-centro {
+    color: blue;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre el título y los botones */
+  }
+  
+  .botones-centro {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+  }
+  
+  .contactanos-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el botón y el texto */
+  }
+  
+  .contactanos-button:hover {
+    background-color: darkblue;
+  }
+  
+  .nuestros-servicios {
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-verde-container {
+    margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  }
+  
+  .texto-verde {
+    color: green;
+    margin-bottom: 20px; /* Espacio inferior */
+    max-width: 65ch; /* Limita el ancho del párrafo a 65 caracteres */
+  }
+  .mi3-componente {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
+  }
+  
+  .columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    margin-left: 40px; /* Ajusta este valor según sea necesario para mover los textos más a la derecha */
+  }
+  
+  .columna-derecha {
+    flex: 1;
+  }
+  
+  .texto-azul-centro {
+    color: blue;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre el título y los botones */
+  }
+  
+  .botones-centro {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Ajusta este valor según sea necesario para mover los botones más abajo */
+  }
+  
+  .contactanos-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre el botón y el texto */
+  }
+  
+  .contactanos-button:hover {
+    background-color: darkblue;
+  }
+  
+  .nuestros-servicios {
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-verde-container {
+    margin-top: 20px; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+  }
+  
+  .texto-verde {
+    color: green;
+    margin-bottom: 20px; /* Espacio inferior */
+    max-width: 65ch; /* Limita el ancho del párrafo a 65 caracteres */
+  }
+  .texto-centrado {
+    text-align: center;
+    margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-separado {
+    margin-right: 40px; /* Ajusta este valor según sea necesario para separar los textos */
+  }
+  
+  .texto-separado:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  .imagenes-superpuestas {
+    position: relative;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .imagen-superpuesta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: superposicion 6s infinite;
+  }
+  
+  .imagen-superpuesta:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .imagen-superpuesta:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .imagen-superpuesta:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  @keyframes superposicion {
+    0%, 100% {
+      opacity: 0;
+    }
+    33.33%, 66.66% {
+      opacity: 1;
+    }
+  }
+  .imagenes-superpuestas {
+    position: relative;
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    height: 200px; /* Ajusta el tamaño según sea necesario */
+    overflow: hidden;
+  }
+  
+  .imagen-superpuesta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: superposicion 9s infinite;
+  }
+  
+  .imagen-superpuesta:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .imagen-superpuesta:nth-child(2) {
+    animation-delay: 3s;
+  }
+  
+  .imagen-superpuesta:nth-child(3) {
+    animation-delay: 6s;
+  }
+  
+  @keyframes superposicion {
+    0%, 33.33% {
+      opacity: 1;
+    }
+    66.66%, 100% {
+      opacity: 0;
+    }
+  }
+  .imagenes-superpuestas {
+    position: relative;
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    height: 200px; /* Ajusta el tamaño según sea necesario */
+    overflow: hidden;
+  }
+  
+  .imagen-superpuesta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: superposicion 9s infinite;
+  }
+  
+  .imagen-superpuesta:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .imagen-superpuesta:nth-child(2) {
+    animation-delay: 3s;
+  }
+  
+  .imagen-superpuesta:nth-child(3) {
+    animation-delay: 6s;
+  }
+  
+  @keyframes superposicion {
+    0%, 33.33% {
+      opacity: 1;
+    }
+    66.66%, 100% {
+      opacity: 0;
+    }
+  }
+  .texto-centrado {
+    text-align: center;
+    margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-separado {
+    margin-right: 40px; /* Ajusta este valor según sea necesario para separar los textos */
+  }
+  
+  .texto-separado:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  
+  .texto-centrado .texto-separado:first-child {
+    margin-right: 60px; /* Ajusta este valor para separar más "Nuestro compromiso" de "Contáctanos" */
+    margin-left: -20px; /* Ajusta este valor para mover ambos textos más a la izquierda */
+  }
+  .texto-centrado {
+    text-align: left; /* Cambia la alineación a la izquierda */
+    margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-separado {
+    margin-right: 40px; /* Ajusta este valor según sea necesario para separar los textos */
+  }
+  
+  .texto-separado:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  
+  .texto-centrado .texto-separado:first-child {
+    margin-right: 60px; /* Ajusta este valor para separar más "Nuestro compromiso" de "Contáctanos" */
+    margin-left: -20px; /* Ajusta este valor para mover ambos textos más a la izquierda */
+  }
+  .texto-centrado {
+    text-align: left; /* Cambia la alineación a la izquierda */
+    margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-separado {
+    margin-right: 40px; /* Ajusta este valor según sea necesario para separar los textos */
+  }
+  
+  .texto-separado:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  
+  .texto-centrado .texto-separado:first-child {
+    margin-right: 60px; /* Ajusta este valor para separar más "Nuestro compromiso" de "Contáctanos" */
+  }
+  .texto-centrado {
+    text-align: left; /* Cambia la alineación a la izquierda */
+    margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-separado {
+    margin-right: 60px; /* Ajusta este valor según sea necesario para separar los textos */
+  }
+  
+  .texto-separado:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  .texto-centrado {
+    text-align: left; /* Cambia la alineación a la izquierda */
+    margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-separado {
+    margin-right: 60px; /* Ajusta este valor según sea necesario para separar los textos */
+  }
+  
+  .texto-separado:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  
+  .texto-separado:first-child {
+    margin-left: 30px; /* Ajusta este valor para mover "Contáctanos" más a la derecha */
+  }
+  .texto-centrado {
+    text-align: left; /* Cambia la alineación a la izquierda */
+    margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-separado {
+    margin-right: 60px; /* Ajusta este valor según sea necesario para separar los textos */
+  }
+  
+  .texto-separado:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  
+  .texto-separado:first-child {
+    margin-left: 30px; /* Ajusta este valor para mover "Contáctanos" más a la derecha */
+  }
+  .texto-centrado {
+    text-align: left; /* Cambia la alineación a la izquierda */
+    margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-separado {
+    margin-right: 60px; /* Ajusta este valor según sea necesario para separar los textos */
+  }
+  
+  .texto-separado:first-child {
+    margin-left: 30px; /* Ajusta este valor para mover "Contáctanos" más a la derecha */
+  }
+  .texto-centrado {
+    text-align: center; /* Cambia la alineación a la izquierda */
+    margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  .texto-separado {
+    margin-right: 60px; /* Ajusta este valor según sea necesario para separar los textos */
+  }
+  
+  .texto-separado:first-child {
+    margin-left: 30px; /* Ajusta este valor para mover "Contáctanos" más a la derecha */
+  }
+  .texto-centrado {
+    text-align: left; /* Cambia la alineación a la izquierda */
+    margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-superpuestas {
+    position: relative;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    margin-left: 80px; /* Espacio entre el texto y las imágenes */
+  }
+  
+  .imagen-superpuesta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .imagen-desplazada {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: desplazar 9s infinite;
+  }
+
+
+
+
+  .imagen-superpuesta:nth-child(2) {
+    animation-delay: 0s;
+  }
+  
+  .imagen-superpuesta:nth-child(3) {
+    animation-delay: 3s;
+  }
+  
+  @keyframes superposicion {
+    0%, 33.33% {
+      opacity: 1;
+    }
+    66.66%, 100% {
+      opacity: 0;
+    }
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-superpuestas {
+    position: relative;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    margin-left: 20px; /* Espacio entre el texto y las imágenes */
+  }
+  imagen-superpuesta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .imagen-desplazada {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: desplazar 9s infinite;
+  }
+  .imagen-desplazada:nth-child(2) {
+    animation-delay: 0s;
+  }
+  .imagen-desplazada:nth-child(3) {
+    animation-delay: 3s;
+  }
+  
+  @keyframes desplazar {
+    0%, 33.33% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(50px, 50px); /* Ajusta este valor para mover la imagen en diagonal */
+      opacity: 1;
+    }
+    66.66%, 100% {
+      transform: translate(100px, 100px); /* Ajusta este valor para mover la imagen más abajo */
+      opacity: 1;
+    }
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-superpuestas {
+    position: relative;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    margin-left: 20px; /* Espacio entre el texto y las imágenes */
+  }
+  
+  .imagen-superpuesta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagen-desplazada-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(50px, 50px); /* Ajusta este valor para mover la imagen en diagonal */
+  }
+  
+  .imagen-desplazada-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(100px, 100px); /* Ajusta este valor para mover la imagen más abajo */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-superpuestas {
+    position: relative;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    margin-left: 20px; /* Espacio entre el texto y las imágenes */
+  }
+  
+  .imagen-superpuesta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagen-desplazada-1 {
+    position: relative;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    transform: translate(50px, 50px); /* Ajusta este valor para mover la imagen en diagonal */
+  }
+  
+  .imagen-desplazada-2 {
+    position: relative;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    transform: translate(100px, 100px); /* Ajusta este valor para mover la imagen más abajo */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .imagen-lado-a-lado:nth-child(2) {
+    margin-top: 20px; /* Ajusta este valor para mover la imagen más abajo */
+  }
+  
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .imagen-lado-a-lado:nth-child(2) {
+    margin-top: 20px; /* Ajusta este valor para mover la imagen más abajo */
+  }
+  
+  .imagen-lado-a-lado:nth-child(3) {
+    margin-top: 40px; /* Ajusta este valor para mover la imagen más abajo */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .imagen-lado-a-lado:nth-child(2) {
+    margin-top: 20px; /* Ajusta este valor para mover la imagen más abajo */
+  }
+  
+  .imagen-lado-a-lado:nth-child(3) {
+    margin-top: 40px; /* Ajusta este valor para mover la imagen más abajo */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+    position: relative;
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    animation: ocultarYMostrar 6s infinite;
+  }
+  
+  .imagen-lado-a-lado:nth-child(2) {
+    animation-delay: 0s;
+  }
+  
+  .imagen-lado-a-lado:nth-child(3) {
+    animation-delay: 3s;
+  }
+  
+  @keyframes ocultarYMostrar {
+    0%, 33.33% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-40px, -40px); /* Ajusta este valor para mover la imagen debajo de la primera */
+      opacity: 0;
+    }
+    66.66%, 100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+    position: relative;
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .imagen-lado-a-lado:nth-child(2),
+  .imagen-lado-a-lado:nth-child(3) {
+    position: absolute;
+    animation: ocultarYMostrar 6s infinite;
+  }
+  
+  .imagen-lado-a-lado:nth-child(2) {
+    animation-delay: 0s;
+  }
+  
+  .imagen-lado-a-lado:nth-child(3) {
+    animation-delay: 3s;
+  }
+  
+  @keyframes ocultarYMostrar {
+    0%, 33.33% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-40px, -40px); /* Ajusta este valor para mover la imagen debajo de la primera */
+      opacity: 0;
+    }
+    66.66%, 100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+    position: relative;
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .imagen-lado-a-lado:nth-child(2),
+  .imagen-lado-a-lado:nth-child(3) {
+    position: absolute;
+    animation: ocultarYMostrar 6s infinite;
+  }
+  
+  .imagen-lado-a-lado:nth-child(2) {
+    animation-delay: 0s;
+  }
+  
+  .imagen-lado-a-lado:nth-child(3) {
+    animation-delay: 3s;
+  }
+  
+  @keyframes ocultarYMostrar {
+    0%, 33.33% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-40px, -40px); /* Ajusta este valor para mover la imagen debajo de la primera */
+      opacity: 0;
+    }
+    66.66%, 100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+    position: relative;
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .imagen-lado-a-lado:nth-child(2),
+  .imagen-lado-a-lado:nth-child(3) {
+    position: absolute;
+    animation: ocultarYMostrar 6s infinite;
+  }
+  
+  .imagen-lado-a-lado:nth-child(2) {
+    animation-delay: 0s;
+  }
+  
+  .imagen-lado-a-lado:nth-child(3) {
+    animation-delay: 3s;
+  }
+  
+  @keyframes ocultarYMostrar {
+    0%, 33.33% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-40px, -40px); /* Ajusta este valor para mover la imagen debajo de la primera */
+      opacity: 0;
+    }
+    66.66%, 100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 60px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .casos-de-exito {
+    font-size: 24px; /* Tamaño de letra grande */
+    font-weight: bold; /* Negritas */
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .casos-de-exito {
+    font-size: 24px; /* Tamaño de letra grande */
+    font-weight: bold; /* Negritas */
+    margin-top: 20px; /* Espacio superior */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 60px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .casos-de-exito {
+    font-size: 24px; /* Tamaño de letra grande */
+    font-weight: bold; /* Negritas */
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 60px; /* Ajusta este valor para mover el texto más a la derecha */
+  }
+  
+  .texto-normal {
+    margin-top: 10px; /* Espacio superior */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    margin-left: 60px; /* Ajusta este valor para mover el texto más a la derecha */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 60px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .casos-de-exito {
+    font-size: 24px; /* Tamaño de letra grande */
+    font-weight: bold; /* Negritas */
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+  }
+  
+  .texto-normal {
+    margin-top: 10px; /* Espacio superior */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 60px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .casos-de-exito {
+    font-size: 24px; /* Tamaño de letra grande */
+    font-weight: bold; /* Negritas */
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 20px; /* Ajusta este valor para mover el texto más a la izquierda */
+  }
+  
+  .texto-normal {
+    margin-top: 10px; /* Espacio superior */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    margin-left: 20px; /* Ajusta este valor para mover el texto más a la izquierda */
+  }
+  
+  .imagen-casos-exito {
+    display: block;
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+    width: 80%; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  .texto-e-imagenes {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .imagenes-lado-a-lado {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-left: 60px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  }
+  
+  .imagen-lado-a-lado {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .casos-de-exito {
+    font-size: 24px; /* Tamaño de letra grande */
+    font-weight: bold; /* Negritas */
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 40px; /* Ajusta este valor para mover el texto más a la izquierda */
+  }
+  
+  .texto-normal {
+    margin-top: 10px; /* Espacio superior */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    margin-left: 40px; /* Ajusta este valor para mover el texto más a la izquierda */
+  }
+  
+  .imagenes-casos-exito {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+  }
+  
+  .imagen-casos-exito {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
