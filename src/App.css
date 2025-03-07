@@ -1,0 +1,194 @@
+
+@import url('/node_modules/@fortawesome/fontawesome-free/css/all.min.css');
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.imagen-ejemplo {
+  width: 300px;
+  position: absolute;
+  top: 250px;
+  left: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .imagen-ejemplo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.parrafo-nuevo {
+  color: red;
+}
+
+.texto-azul {
+  color: rgb(46, 55, 236);
+}
+
+.texto-gris {
+  color: rgb(153, 154, 171);
+}
+
+.texto-rojo {
+  color: #e10808;
+}
+
+
+.bold-pointer {
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  padding: 5px 10px; /* Asegura que todos los enlaces tengan el mismo padding */
+  line-height: normal; /* Asegura que todos los enlaces tengan la misma altura de línea */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #e9ebe0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(4, 4, 236);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* filepath: /Users/piedadgarciarobledo/Documents/P_Ominova/Code/ominova/src/App.css */
+.icon-blue {
+  color: blue; /* Cambia el color del icono a azul */
+}
+
+
+.grey-box {
+  background-color: rgb(242, 236, 236); /* Color de fondo gris */
+  color: rgba(1, 0, 2, 0.453); /* Color del texto */
+  padding: 15px; /* Espacio interno */
+  border-radius: 5px; /* Bordes redondeados */
+  margin: 10px 0; /* Espacio externo */
+}
+
+.blue-box {
+  background-color: rgb(75, 120, 219);
+  color: white;
+  padding: 3px 1px; /* Ajusta el padding para reducir la altura */
+  border-radius: 5px;
+  text-decoration: none; /* Para eliminar el subrayado del enlace */
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  line-height: 1; /* Ajusta la altura de la línea para centrar el texto */
+}
+
+.blue-box:hover {
+  background-color: darkblue; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+.info {
+  flex: 10%;
+}
+
+.navmenu {
+  flex:10%; /* Ajusta este valor para asignar más o menos espacio */
+  padding: 1px; /* Ajusta el padding según sea necesario */
+  /* Puedes añadir más estilos aquí según sea necesario */
+  height: 0.001vh;
+}
+
+.home {
+  flex:10%;
+}
+
+.micomponente {
+  flex: 1;
+}
+
+.mi2componente {
+  flex:40%;
+}
+
+.mi3Componente {
+  flex: 10%;
+}
+
+
+
+
+
+.micomponente-container {
+ display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%; /* Asegura que el contenedor ocupe todo el espacio asignado */
+  overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del contenedor */
+}
+
+.imagen-ejemplo {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
+}
+
+.elipse-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px; /* Ajusta el tamaño según sea necesario */
+  height: 400px; /* Ajusta el tamaño según sea necesario */
+  background-color: #f0f0f0; /* Color de fondo de la elipse */
+  border-radius: 50% / 25%; /* Crea la forma de elipse */
+  overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del contenedor */
+  transform: rotate(-5deg); /* Ajusta el ángulo de rotación según sea necesario */
+}
+
+.elipse-container img { /*Asegura que la imagen se ajuste al contenedor elíptico*/
+  width: 100%;
+  height: 100%;
+}
+
+.circunferencia-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circunferencia-container img {
+  width: 100%;
+  height: auto;
+}
