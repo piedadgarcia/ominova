@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Info from '../components/info/Info';
 import Micomponente from '../components/micomponente/Micomponente';
-import Mi2componente from '../components/portada/Portada';
 import Mi3Componente from '../components/mi3componente/Mi3Componente';
 import Mi4Componente from '../components/mi4Componente/Mi4Componente';
 import Mi5Componente from '../components/mi5Componente/Mi5Componente';
@@ -19,7 +18,7 @@ import Agencia from '../components/agencia/Agencia';
 import CasosExito from '../components/casosExito/CasosExito';
 import ServicioWeb from '../components/servicioWeb/ServicioWeb';
 import Consultoria from '../components/consultoria/Consultoria';
-import Portada from '../components/portada/Portada';
+import Inicio from '../components/inicio/Inicio';
 
 function AppRoutes() {
     return (
@@ -31,7 +30,7 @@ function AppRoutes() {
                 <Route path="/casos-exito" element={<CasosExito />} />
                 <Route path="/agencia" element={<Agencia />} />
                 <Route path="/micomponente" element={<Micomponente />} />
-                <Route path="/portada" element={<Portada />} />
+                <Route path="/inicio" element={<Inicio />} />
                 <Route path="/navmenu" element={<NavMenu />} />
                 <Route path="/miimagservicios" element={<MiImagServicios />} />
                 <Route path="/servicios" element={<Servicios />} />
@@ -46,7 +45,7 @@ function AppRoutes() {
                 <Route path="/mi7Componente" element={<Mi7Componente />} />
                 <Route path="/mi8Componente" element={<Mi8Componente />} />
                 <Route path="/navmenu" element={<NavMenu />} />
-                <Route path="/ominova" element={<Portada />} />
+                <Route path="/ominova" element={<Inicio />} />
             </Routes>
         </>
     );

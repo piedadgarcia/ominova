@@ -6,7 +6,7 @@ import Info from './../info/Info';
 /*
 import Micomponente from './../micomponente/Micomponente';  
 */
-import Mi2componente from '../portada/Portada';
+import Inicio from '../inicio/Inicio';
 import Mi3Componente from './../mi3componente/Mi3Componente';
 import NavMenu from './../navmenu/NavMenu';
 
@@ -29,8 +29,8 @@ function Principal() {
       /</div>
       */}
 
-        <div className="mi2componente">
-      <Mi2componente />
+        <div className="inicio">
+      <Inicio />
       </div>
 
       <div className="mi3componente">

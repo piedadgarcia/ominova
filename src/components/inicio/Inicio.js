@@ -1,7 +1,7 @@
 import React from 'react';
 import Micomponente from "../micomponente/Micomponente";
 
-function Portada() {
+function Inicio() {
     return (
         <nav style={{
             display: 'flex',
@@ -65,4 +65,4 @@ function Portada() {
     );
 }
 
-export default Portada;
+export default Inicio;
