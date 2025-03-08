@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Info from '../info/Info'; // Asegúrate de que la ruta sea correcta
 import './../../App.css';
 
 function ServicioWeb() {
+  const [showTextLlamada, setShowTextLlamada] = useState(false);
+  const [showTextPrebriefing, setShowTextPrebriefing] = useState(false);
+
+  const toggleTextLlamada = () => {
+    setShowTextLlamada(!showTextLlamada);
+  };
+
+  const toggleTextPrebriefing = () => {
+    setShowTextPrebriefing(!showTextPrebriefing);
+  };
+
   return (
     <div>
       <Info />
@@ -23,14 +34,15 @@ function ServicioWeb() {
           
             <div style={{
               marginTop: 50,
-              marginLeft: 50 // Añade espacio a la izquierda de la figura
+              marginLeft: -320 // Añade espacio a la izquierda de la figura
             }}>
 
             <div style={{  
               fontFamily: 'Arial',
-              fontSize: 22,
+              fontSize: 28,
               fontWeight: 'bold',
               padding: '15px 0px',
+              marginLeft: 250,
             
             }}>
               <p>Nuestros <span style={{ color: 'grey' }}>Servicios</span></p>
@@ -40,15 +52,17 @@ function ServicioWeb() {
                 flexDirection: 'column',
                 alignItems: 'flex-start', // Alinea los elementos a la izquierda
                 marginTop: 20,
-                marginLeft: 0, // Ajusta este valor según sea necesario
+                marginLeft: 2, // Ajusta este valor según sea necesario
                 fontSize: 16,
                 fontWeight: 'bold',
       
       }}>
-                <p>Branding</p>
-                <p>Marketing</p>
+             <div className="caja-con-lineas" style={{ width: '450px' }}>
                 <p>Consultoría</p>
-                <p>Desarrollo</p>
+                </div>
+                <div className="caja-con-lineas" style={{ width: '450px' }}>
+                <p>Servicio Web</p>
+                </div>
                 {/* Añade más elementos aquí según sea necesario */}
               </div>
             </div>
@@ -62,8 +76,9 @@ function ServicioWeb() {
           alignItems: 'flex-start', // Alinea los elementos a la izquierda
           padding: 15,
           width: '50%', // Asegura que el componente ocupe la mitad del ancho del navegador
-          boxSizing: 'border-box' // Incluye el padding en el ancho total
-        }}>
+          boxSizing: 'border-box', // Incluye el padding en el ancho total
+          
+     }}>
             
             <div style={{
               display: 'flex',
@@ -74,10 +89,12 @@ function ServicioWeb() {
               fontFamily: 'Arial',
               fontWeight: 'bold',
               padding: '50px 0px',
-              width: '100%' // Asegura que el div ocupe todo el ancho del navegador
+              width: '120%', // Asegura que el div ocupe todo el ancho del navegador
+              marginLeft: -40
+            
             }}>
               
-              <p> Servicio de Branding </p>
+              <p> Servicio Web </p>
 
               <div style={{  
               fontFamily: 'Arial',
@@ -88,31 +105,78 @@ function ServicioWeb() {
               width: '80%' // Asegura que el div ocupe el 80% del ancho del navegador
             }}>
 
-            <p> En Ominova, comprendemos que el branding es mucho más que una estrategia; es la clave para el éxito duradero de tu empresa, lo que el mundo recuerda de ti. Nuestra especialidad radica en identificar el potencial latente de tu marca y desarrollarlo al máximo. </p>
-            <p> Para nosotros, cada proyecto es único, nos sumergimos en la esencia de tu negocio y plasmamos su personalidad en una imagen sólida y coherente, adaptándola a todas las plataformas comunicativas. Estamos aquí para hacer magia por ti.</p>
+            <p> En Ominova estamos especializados en diseño y desarrollo web. Trabajamos con los principales CMS del mercado y ofrecemos páginas web a medida, de una alta calidad y con un enorme rendimiento. Tanto si buscas un ecommerce como una web corporativa sencilla, nos adaptamos a tus necesidades. </p>
             <p> Descubre cómo hacemos que ocurra: </p>
             </div>
 
-            <p> Diagnóstico </p>
+            <p> Toma de contacto </p>
 
 <div style={{  
 fontFamily: 'Arial',
-padding: '50px 0px',
-width: '100%' // Asegura que el div ocupe todo el ancho del navegador
+fontSize: '15px',
+fontWeight: 'normal',
+textAlign: 'justify', // Justifica el texto
+padding: '10px 0px',
+width: '80%' // Asegura que el div ocupe todo el ancho del navegador
 }}>
 
-<p> La primera fase de nuestro servicio de branding parte de comprender bien cómo se comportan tus competidores y referentes sectoriales en primer lugar, y entender bien el core o núcleo de tu empresa, aquello que te hace único. Esta fase de diagnóstico nos permite asentar las bases de lo que será tu nueva marca</p>
+<p> En la fase de onboarding queremos asegurarnos que te sientas como en tu casa. Queremos conocer tu proyecto, las ideas que tienes, cómo quieres desarrollarlas y queremos asesorarte en lo que, creemos, más puede ayudarte a desarrollar tu nueva web. Queremos que nuestro método esté alineado con tus objetivos, así que esta fase de toma de contacto nos valdrá para establecer prioridades, iniciar la estrategia, recabar información y orientarte con los plazos.</p>
 
 <div style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-start', // Alinea los elementos a la izquierda
                 marginTop: 20,
-                marginLeft: 0 // Ajusta este valor según sea necesario
-              }}>
-                <p>Análisis interno</p>
-                <p>Análisis externo</p>
-                <p>Conclusiones</p>
+                marginLeft: 0, // Ajusta este valor según sea necesario
+                fontWeight: 'bold'
+    }}>
+                 <div className="caja-con-lineas" style={{ width: '657px', position: 'relative' }}>
+                <p>Llamada de bienvenida</p>
+                <span 
+                  style={{ 
+                    position: 'absolute', 
+                    right: '10px', 
+                    top: '50%', 
+                    transform: 'translateY(-50%)', 
+                    cursor: 'pointer' 
+                  }} 
+                  onClick={toggleTextLlamada}
+                >
+                  +
+                </span>
+                </div>
+                {showTextLlamada && (
+                  <div style={{ marginTop: '10px' }}>
+                    <p style={{ color: 'grey' }}>Lo primero antes de dejar el diseño de tu web o la creación de una tienda online en manos de una agencia, es conocer si realmente es lo que necesitas.</p>
+                    <p style={{ color: 'grey' }}>El equipo de consultores te llamará para que les cuentes todo lo que necesitamos para arrancar con tu idea y ver cómo sacarle el máximo partido.</p>
+                    <p style={{ color: 'grey' }}>Cada empresa se encuentra en una etapa diferente y por ello lo mejor es recibir una consultoría gratis que te ayude a aclarar tus ideas y el futuro de tu empresa.</p>
+                  </div>
+                )}
+                <div className="caja-con-lineas" style={{ width: '657px', position: 'relative' }}> 
+                <p>Envío prebriefing</p>
+                <span 
+                  style={{ 
+                    position: 'absolute', 
+                    right: '10px', 
+                    top: '50%', 
+                    transform: 'translateY(-50%)', 
+                    cursor: 'pointer' 
+                  }} 
+                  onClick={toggleTextPrebriefing}
+                >
+                  +
+                </span>
+                </div>
+                {showTextPrebriefing && (
+                  <div style={{ marginTop: '10px' }}>
+                    <p style={{ color: 'grey' }}>Lo primero antes de dejar el diseño de tu web o la creación de una tienda online en manos de una agencia, es conocer si realmente es lo que necesitas.</p>
+                    <p style={{ color: 'grey' }}>El equipo de consultores te llamará para que les cuentes todo lo que necesitamos para arrancar con tu idea y ver cómo sacarle el máximo partido.</p>
+                    <p style={{ color: 'grey' }}>Cada empresa se encuentra en una etapa diferente y por ello lo mejor es recibir una consultoría gratis que te ayude a aclarar tus ideas y el futuro de tu empresa.</p>
+                  </div>
+                )}
+                <div className="caja-con-lineas" style={{ width: '657px' }}>
+                <p>En caso de restailling: Servicio puntual SEO</p>
+                </div>
                 
                 {/* Añade más elementos aquí según sea necesario */}
               </div>
