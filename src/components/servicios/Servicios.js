@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import MiComServicios from "../micomservicios/MiComServicios"; // Corregir la ruta de importación
+import MiImagServicios from "../miimagservicios/MiImagServicios"; // Corregir la ruta de importación
 import Info from '../info/Info';
 
 function MiServicios() {
@@ -66,7 +66,7 @@ function MiServicios() {
                         marginTop: 100,
                         marginLeft: 130 // Añade espacio a la izquierda de la figura
                     }}>
-                        <MiComServicios />
+                        <MiImagServicios />
                     </div>
                 </div>
 

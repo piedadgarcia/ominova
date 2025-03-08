@@ -34,7 +34,9 @@ function NavMenu() {
         <div style={{
                     marginLeft: 100, // Ajusta este valor según sea necesario
                }}></div>
-        Ominova
+        
+       
+        <Link to="/ominova" style={{ textDecoration: 'none' }}>Ominova</Link>
         </div>
       
       <div style={{
@@ -49,13 +51,14 @@ function NavMenu() {
         flex: 0.8 // Asigna menos espacio a este componente
       }}>
         
+  
         <Link to="/agencia" className='bold-pointer'> 
           La agencia
         </Link>
         <Link to="/info" className='bold-pointer'>
           Proyectos
         </Link>
-        <Link to="/miservicios" className='bold-pointer'>
+        <Link to="/servicios" className='bold-pointer'>
           Servicios
         </Link>
         <Link to="/casos-exito" className='bold-pointer'>

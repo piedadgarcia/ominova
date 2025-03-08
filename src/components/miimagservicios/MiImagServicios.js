@@ -1,7 +1,7 @@
 import React from 'react';
 import './../../App.css';
 
-function MiComServicios() {
+function MiImagServicios() {
     return (
       
             <div className="micomponente-wrapper">
@@ -22,5 +22,5 @@ function MiComServicios() {
     );
 }
 
-export default MiComServicios;
+export default MiImagServicios;
 
