@@ -102,51 +102,8 @@ function MiServicios() {
                     marginTop: -70,
                     marginLeft: 0 // Ajusta este valor según sea necesario para desplazar la fila hacia la izquierda
                 }}>
-                    <div style={{
-                        border: '1px solid lightgrey', // Borde gris claro
-                        padding: '24px', // Ajusta el padding según sea necesario
-                        backgroundColor: 'transparent', // Fondo transparente
-                        maxWidth: '290px', // Ajusta el ancho máximo del contenedor para dividir el texto en dos líneas
-                        textAlign: 'justify', // Justifica el texto
-                        marginBottom: '0px'
-                    }}>
-                        <p style={{ marginLeft: 0, marginTop: 0, color: 'black', fontWeight: 'bold', fontFamily: 'Arial' }}>Branding</p>
-                        <p>Crea una marca única y atractiva que identifique quién eres.</p>
-                        <div style={{
-                            fontSize: 14,
-                            fontFamily: 'Arial',
-                            fontWeight: 'bold',
-                            padding: '7px 0px',
-                        }}>
-                            <Link to="/branding" style={{ marginLeft: 0, marginTop: 10, textDecoration: 'none', color: 'black' }}>
-                                Mas info <FontAwesomeIcon icon={faArrowRight} />
-                            </Link>
-                        </div>
-                    </div>
 
-                    <div style={{
-                        border: '1px solid lightgrey', // Borde gris claro
-                        padding: '24px', // Ajusta el padding según sea necesario
-                        backgroundColor: 'transparent', // Fondo transparente
-                        maxWidth: '290px', // Ajusta el ancho máximo del contenedor para dividir el texto en dos líneas
-                        textAlign: 'justify', // Justifica el texto
-                        marginBottom: '0px'
-                    }}>
-                        <p style={{ marginLeft: 0, marginTop: 0, color: 'black', fontWeight: 'bold', fontFamily: 'Arial' }}>Marketing</p>
-                        <p>Desarrolla estrategias efectivas para llegar a tu audiencia.</p>
-                        <div style={{
-                            fontSize: 14,
-                            fontFamily: 'Arial',
-                            fontWeight: 'bold',
-                            padding: '7px 0px',
-                        }}>
-                            <Link to="/otro-componente" style={{ marginLeft: 0, marginTop: 10, textDecoration: 'none', color: 'black' }}>
-                                Mas info <FontAwesomeIcon icon={faArrowRight} />
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div style={{
+                            <div style={{
                         border: '1px solid lightgrey', // Borde gris claro
                         padding: '24px', // Ajusta el padding según sea necesario
                         backgroundColor: 'transparent', // Fondo transparente
@@ -162,13 +119,18 @@ function MiServicios() {
                             fontWeight: 'bold',
                             padding: '7px 0px',
                         }}>
-                            <Link to="/otro-componente" style={{ marginLeft: 0, marginTop: 10, textDecoration: 'none', color: 'black' }}>
+                            <Link to="/consultoria" style={{ marginLeft: 0, marginTop: 10, textDecoration: 'none', color: 'black' }}>
                                 Mas info <FontAwesomeIcon icon={faArrowRight} />
                             </Link>
+
+
+
+         
                         </div>
                     </div>
 
-                    <div style={{
+
+<div style={{
                         border: '1px solid lightgrey', // Borde gris claro
                         padding: '24px', // Ajusta el padding según sea necesario
                         backgroundColor: 'transparent', // Fondo transparente
@@ -176,18 +138,22 @@ function MiServicios() {
                         textAlign: 'justify', // Justifica el texto
                         marginBottom: '0px'
                     }}>
-                        <p style={{ marginLeft: 0, marginTop: 0, color: 'black', fontWeight: 'bold', fontFamily: 'Arial' }}>Desarrollo</p>
-                        <p>Implementa soluciones tecnológicas innovadoras.</p>
+                        <p style={{ marginLeft: 0, marginTop: 0, color: 'black', fontWeight: 'bold', fontFamily: 'Arial' }}>Servicio Web</p>
+                        <p>Personaliza tus páginas web para llegar a tu audiencia.</p>
                         <div style={{
                             fontSize: 14,
                             fontFamily: 'Arial',
                             fontWeight: 'bold',
                             padding: '7px 0px',
                         }}>
-                            <Link to="/otro-componente" style={{ marginLeft: 0, marginTop: 10, textDecoration: 'none', color: 'black' }}>
+                            <Link to="/servicioWeb" style={{ marginLeft: 0, marginTop: 10, textDecoration: 'none', color: 'black' }}>
                                 Mas info <FontAwesomeIcon icon={faArrowRight} />
-                            </Link>
+                            </Link>           
+             
                         </div>
+                    
+
+                 
                     </div>
                 </div>
             </nav>

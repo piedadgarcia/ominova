@@ -17,6 +17,8 @@ import Contacto from '../components/contacto/Contacto';
 import Branding from '../components/branding/Branding';
 import Agencia from '../components/agencia/Agencia';
 import CasosExito from '../components/casosExito/CasosExito';
+import ServicioWeb from '../components/servicioWeb/ServicioWeb';
+import Consultoria from '../components/branding/Branding';
 
 function AppRoutes() {
     return (
@@ -34,6 +36,8 @@ function AppRoutes() {
                 <Route path="/miservicios" element={<MiServicios />} />
                 <Route path="/contacto" element={<Contacto />} />
                 <Route path="/branding" element={<Branding />} />
+                <Route path="/servicioWeb" element={<ServicioWeb />} /> 
+                <Route path="/consultoria" element={<Consultoria />} />
                 <Route path="/mi3Componente" element={<Mi3Componente />} />
                 <Route path="/mi4Componente" element={<Mi4Componente />} />
                 <Route path="/mi5Componente" element={<Mi5Componente />} />
