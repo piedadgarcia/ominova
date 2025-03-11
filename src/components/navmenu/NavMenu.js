@@ -36,7 +36,7 @@ function NavMenu() {
                }}></div>
         
        
-        <Link to="/portada" style={{ textDecoration: 'none' }}>Ominova</Link>
+        <Link to="/ominova" style={{ textDecoration: 'none' }}>Ominova</Link>
         </div>
       
       <div style={{

@@ -10,15 +10,28 @@ import Mi7Componente from '../components/mi7Componente/Mi7Componente';
 import Mi8Componente from '../components/mi8Componente/Mi8Componente';
 import Principal from '../components/main/Principal';
 import NavMenu from '../components/navmenu/NavMenu';
+
 import MiImagServicios from '../components/miimagservicios/MiImagServicios';
 import Servicios from '../components/servicios/Servicios';
-import Contacto from '../components/contacto/Contacto';
+import ServicioWeb from '../components/servicioWeb/ServicioWeb';
+import TomaDeContacto from '../components/tomaDeContacto/TomaDeContacto';
+import Briefing from '../components/briefing/Briefing';
+import Estrategia from '../components/estrategia/Estrategia';
+import Contenidos from '../components/contenidos/Contenidos';
+import DiseñoFase1 from '../components/diseñoFase1/DiseñoFase1';
+import DiseñoFase2 from '../components/diseñoFase2/DiseñoFase2';  
+import Lanzamiento from '../components/lanzamiento/Lanzamiento'; 
 import Branding from '../components/branding/Branding';
+import Contacto from '../components/contacto/Contacto';
+
 import Agencia from '../components/agencia/Agencia';
 import CasosExito from '../components/casosExito/CasosExito';
-import ServicioWeb from '../components/servicioWeb/ServicioWeb';
+
 import Consultoria from '../components/consultoria/Consultoria';
 import Inicio from '../components/inicio/Inicio';
+
+
+
 
 function AppRoutes() {
     return (
@@ -33,11 +46,18 @@ function AppRoutes() {
                 <Route path="/inicio" element={<Inicio />} />
                 <Route path="/navmenu" element={<NavMenu />} />
                 <Route path="/miimagservicios" element={<MiImagServicios />} />
-                <Route path="/servicios" element={<Servicios />} />
                 <Route path="/contacto" element={<Contacto />} />
-                <Route path="/branding" element={<Branding />} />
+                <Route path="/servicios" element={<Servicios />} />   
                 <Route path="/servicioWeb" element={<ServicioWeb />} /> 
-                <Route path="/consultoria" element={<Consultoria />} />
+                <Route path="/branding" element={<Branding />} />
+                <Route path="/tomaDeContactio" element={<TomaDeContacto />} />
+                <Route path="/briefing" element={<Briefing />} />
+                <Route path="/estrategia" element={<Estrategia />} />
+                <Route path="/contenidos" element={<Contenidos />} />
+                <Route path="/diseñoFase1" element={<DiseñoFase1 />} />
+                <Route path="/diseñoFase2" element={<DiseñoFase2 />} />
+                <Route path="/lanzamiento" element={<Lanzamiento />} />
+                 <Route path="/consultoria" element={<Consultoria />} />
                 <Route path="/mi3Componente" element={<Mi3Componente />} />
                 <Route path="/mi4Componente" element={<Mi4Componente />} />
                 <Route path="/mi5Componente" element={<Mi5Componente />} />
@@ -46,6 +66,7 @@ function AppRoutes() {
                 <Route path="/mi8Componente" element={<Mi8Componente />} />
                 <Route path="/navmenu" element={<NavMenu />} />
                 <Route path="/ominova" element={<Inicio />} />
+              
             </Routes>
         </>
     );
