@@ -214,6 +214,14 @@
   color: blue; /* Cambia el color del icono a azul */
 }
 
+.caja-con-lineas {
+  display: inline-block; /* Ajusta el ancho de la caja al contenido del texto */
+  border-top: 1px solid rgba(211, 211, 211, 0.468); /* Línea superior en gris claro */
+  border-bottom: 1px solid rgba(211, 211, 211, 0.468); /* Línea inferior en gris claro */
+  padding: 0cm 0; /* Ajusta el padding según sea necesario */
+  margin: 0px ; /* Ajusta el margen según sea necesario */
+}
+
 
 .grey-box {
   background-color: rgb(242, 236, 236); /* Color de fondo gris */

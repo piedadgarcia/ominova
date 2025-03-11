@@ -2,6 +2,9 @@ import React from 'react';
 import './../../App.css';
 import Home from './../home/Home';
 import Info from './../info/Info';
+
+
+
 // omentario de bloque para excluir la importación de Micomponente
 /*
 import Micomponente from './../micomponente/Micomponente';  
