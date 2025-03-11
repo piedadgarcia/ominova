@@ -3,10 +3,21 @@ import './../../App.css';
 
 function Mi3Componente() {
   const [texto, setTexto] = useState("TODO ES PARA AYUDARTE");
+  const [imagenIndex, setImagenIndex] = useState(0);
   const textos = [
     "TODO ES PARA AYUDARTE",
     "TODO ES PARA CONSTRUIR MARCA",
     "TODO ES PARA LLEGAR A TUS CLIENTES"
+  ];
+  const imagenes = [
+    "/IMG_3711.JPG",
+    "/IMG_3713.JPG",
+    "/IMG_3715.JPG",
+    "/IMG_3716.JPG",
+    "/IMG_3698.JPG",
+    "/IMG_3711.JPG",
+    "/IMG_3713.JPG",
+    "/IMG_3715.JPG"
   ];
 
   useEffect(() => {
@@ -18,6 +29,16 @@ function Mi3Componente() {
 
     return () => clearInterval(interval);
   }, []);
+
+  const handlePrevClick = () => {
+    setImagenIndex((prevIndex) => (prevIndex - 4 + imagenes.length) % imagenes.length);
+  };
+
+  const handleNextClick = () => {
+    setImagenIndex((prevIndex) => (prevIndex + 4) % imagenes.length);
+  };
+
+  const imagenesVisibles = imagenes.slice(imagenIndex, imagenIndex + 4);
 
   return (
     <div className="mi3-componente">
@@ -31,31 +52,41 @@ function Mi3Componente() {
       <div className="columna-derecha">
         <div className="texto-verde-container">
           <p className="texto-grande">Agencia de marketing digital para líderes</p>
-          <p className="texto-normal">Tan sólo con la mejor calidad se pueden alcanzar los mejores resultados</p>
+          <p className="texto-normal">Tan sólo con la mejor calidad se pueden alcanzar los mejores resultados.</p>
           <ul>
-            <li><strong>Conoce más sobre nosotros</strong></li>
+            <li><strong>Nuestro equipo</strong></li>
             <div className="texto-e-imagenes">
               <p className="texto-verde">
                 Resultados, creatividad, emoción, plazos cumplidos, marketing sencillo...todo ello depende de personas y, por eso, apostamos por formar el mejor equipo posible. Todo el equipo reúne los mismos requisitos: buena gente, pasión por su trabajo y especialización absoluta en su oficio. En la Empresa contamos con técnicos especializados en cada área de trabajo.
               </p>
               <div className="imagenes-lado-a-lado">
-                <img src="/PHOTO-2025-02-08-15-02-00.jpg" alt="PHOTO-2025-02-08-15-02-00" className="imagen-lado-a-lado" />
-                <img src="/PHOTO-2025-02-08-15-04-18.jpg" alt="PHOTO-2025-02-08-15-04-18" className="imagen-lado-a-lado" />
-                <img src="/PHOTO-2025-02-08-15-09-32.jpg" alt="PHOTO-2025-02-08-15-09-32" className="imagen-lado-a-lado" />
+                <img src="/ACCOUNT MANAGER.png" alt="ACCOUNT MANAGER" className="imagen-lado-a-lado" />
+                <img src="/LEADER.png" alt="LEADER" className="imagen-lado-a-lado" />
+                <img src="/SPECIALIST.jpg" alt="SPECIALIST" className="imagen-lado-a-lado" />
+                <img src="/imagen2.png" alt="Imagen adicional" className="imagen-grande" />
               </div>
             </div>
+            </ul>
+            <p className="conoce-mas"><strong>Conoce más sobre nosotros</strong></p>
+          <ul>
+
+
             <li><strong>Nuestros procesos</strong></li>
             <li><strong>Nuestros clientes</strong></li>
             <li><strong>Plazos de ejecución</strong></li>
-            <li><strong>Empresas colaboradoras</strong></li>
+            <li><strong className="empresas-colaboradoras">Empresas colaboradoras</strong></li>
           </ul>
           <p className="casos-de-exito">Casos de éxito</p>
-          <p className="texto-normal">¿Quieres ver de qué somos capaces? Nada te lo va a contar mejor que nuestro trabajo. Aquí tienes una pequeña selección de casos.</p>
+          <p className="texto-normal texto-una-linea">¿Quieres ver de qué somos capaces? Nada te lo va a contar mejor que nuestro trabajo. Aquí tienes una pequeña selección de casos.</p>
+          <p className="descubre-casos-exito">Descubre nuestros casos de éxito</p>
+          <div className="botones-navegacion">
+            <div className="boton-circular" onClick={handlePrevClick}>&lt;</div>
+            <div className="boton-circular" onClick={handleNextClick}>&gt;</div>
+          </div>
           <div className="imagenes-casos-exito">
-            <img src="/IMG_3696.JPG" alt="IMG_3696" className="imagen-casos-exito" />
-            <img src="/IMG_3697.JPG" alt="IMG_3697" className="imagen-casos-exito" />
-            <img src="/IMG_3698.JPG" alt="IMG_3698" className="imagen-casos-exito" />
-            <img src="/IMG_3699.JPG" alt="IMG_3699" className="imagen-casos-exito" />
+            {imagenesVisibles.map((imagen, index) => (
+              <img key={index} src={imagen} alt={`IMG_${imagenIndex + index}`} className="imagen-casos-exito" />
+            ))}
           </div>
         </div>
       </div>

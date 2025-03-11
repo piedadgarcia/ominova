@@ -106,9 +106,10 @@
 }
 
 .texto-centrado {
-  text-align: center;
+  text-align: left; /* Cambia de center a left */
   margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
   font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
 }
 
 .carousel {
@@ -269,9 +270,14 @@
   margin-right: 20px; /* Espacio entre el botón y el texto */
 }
 
-.texto-verde {
-  color: rgb(10, 58, 36);
+
+  .texto-verde {
+    max-width: 75ch; /* Establece el ancho máximo a 75 caracteres */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0; /* Elimina el centrado horizontal */
+    margin-top: 1em; /* Ajusta este valor según sea necesario para mover el texto más abajo */
 }
+
 
 
 .imagenes-lado-a-lado {
@@ -307,7 +313,17 @@
   width: 100px; /* Ajusta el tamaño según sea necesario */
   height: auto; /* Mantiene la proporción de la imagen */
 }
+.imagen-casos-exito {
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  margin: 10px;
+}
 
+.imagenes-casos-exito {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 
 .texto-e-imagenes {
@@ -381,4 +397,92 @@
 .circunferencia-container img {
   width: 100%;
   height: auto;
+}
+.casos-de-exito {
+  font-size: 24px; /* Ajusta el tamaño según tus necesidades */
+  font-weight: bold;
+  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+}
+.texto-una-linea {
+  white-space: nowrap;
+}
+.descubre-casos-exito {
+  font-weight: bold;
+  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+  margin-left: 40px; /* Ajusta este valor para mover el texto más a la derecha */
+}
+.boton-circular {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.boton-circular:hover {
+  background-color: #f0f0f0;
+}
+.botones-navegacion {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+.video-texto-contenedor {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Ajusta el espacio entre el video y el texto */
+}
+
+.video-centro {
+  max-width: 50%; /* Ajusta el tamaño del video según sea necesario */
+  height: auto;
+}
+
+.texto-derecha {
+  max-width: 50%; /* Ajusta el tamaño del contenedor de texto según sea necesario */
+}
+.mi7-componente {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Ajusta el espacio entre el texto y la imagen */
+}
+.imagen-lado {
+  max-width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  border-radius: 50%; /* Hace que la imagen tenga un contorno elíptico */
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+  height: 18em; /* Ajusta la altura de la imagen */
+  margin-right: 400px; /* Ajusta este valor según sea necesario */
+  margin-top: 30px; /* Ajusta este valor según sea necesario para mover la imagen hacia abajo */
+
+}
+
+
+
+
+.texto-contenedor {
+  flex: 1; /* Permite que el contenedor de texto ocupe el espacio disponible */
+}
+.conoce-mas {
+  font-weight: bold; /* Asegura que el texto esté en negrita */
+  margin-left: 30px; /* Ajusta este valor según sea necesario para mover el texto a la derecha */
+}
+.imagen-grande {
+  height: calc(70vh - 140px); /* Ajusta la altura según sea necesario */
+  width: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+  margin-top: -10px; /* Ajusta este valor según sea necesario */
+}
+.empresas-colaboradoras {
+  margin-bottom: 50em; /* Deja un espacio de 10 líneas entre el texto "Empresas colaboradoras" y el texto "Casos de éxito" */
 }
