@@ -6,7 +6,7 @@ function Mi7Componente() {
     <div className="mi7-componente">
             <div className="texto-contenedor">
         <p className="texto-grande">
-          <span className="texto-azul"><strong className="texto-negro">Nuestro compromiso</strong></span>
+          <span className="texto-negro"><strong className="texto-negro">Nuestro compromiso</strong></span>
         </p>
         <p className="texto-ajustado">
           Estamos comprometidos con los demás. Queremos que cada día que la maquinaria esté en
@@ -35,9 +35,9 @@ function Mi7Componente() {
         </p>
       </div>
       <img 
-        src="/pexels-yankrukov-7793098.jpg" 
-        alt="Descripción de la figura" 
-        className="imagen-derecha"
+        src="/IMG_3740.jpg" 
+        alt="IMG_3740" 
+        className="imagen-lado"
       />
     </div>
   );
