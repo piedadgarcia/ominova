@@ -1,11 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import MiImagServicios from "../miimagservicios/MiImagServicios"; // Corregir la ruta de importación
 import Info from '../info/Info';
 
 function MiServicios() {
+    const navigate = useNavigate();
+
+    const handleConsultoriaClick = () => {
+        navigate('/servicioWeb', { state: { showConsultoria: true } });
+    };
+
+    const handleServicioWebClick = () => {
+        navigate('/servicioWeb', { state: { showServicioWeb: true } });
+    };
+
     return (
         <div>
             <Info />
@@ -103,7 +113,7 @@ function MiServicios() {
                     marginLeft: 0 // Ajusta este valor según sea necesario para desplazar la fila hacia la izquierda
                 }}>
 
-                            <div style={{
+                    <div style={{
                         border: '1px solid lightgrey', // Borde gris claro
                         padding: '24px', // Ajusta el padding según sea necesario
                         backgroundColor: 'transparent', // Fondo transparente
@@ -119,18 +129,13 @@ function MiServicios() {
                             fontWeight: 'bold',
                             padding: '7px 0px',
                         }}>
-                            <Link to="/consultoria" style={{ marginLeft: 0, marginTop: 10, textDecoration: 'none', color: 'black' }}>
+                            <span onClick={handleConsultoriaClick} style={{ marginLeft: 0, marginTop: 10, textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
                                 Mas info <FontAwesomeIcon icon={faArrowRight} />
-                            </Link>
-
-
-
-         
+                            </span>
                         </div>
                     </div>
 
-
-<div style={{
+                    <div style={{
                         border: '1px solid lightgrey', // Borde gris claro
                         padding: '24px', // Ajusta el padding según sea necesario
                         backgroundColor: 'transparent', // Fondo transparente
@@ -146,14 +151,10 @@ function MiServicios() {
                             fontWeight: 'bold',
                             padding: '7px 0px',
                         }}>
-                            <Link to="/servicioWeb" style={{ marginLeft: 0, marginTop: 10, textDecoration: 'none', color: 'black' }}>
+                            <span onClick={handleServicioWebClick} style={{ marginLeft: 0, marginTop: 10, textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
                                 Mas info <FontAwesomeIcon icon={faArrowRight} />
-                            </Link>           
-             
+                            </span>
                         </div>
-                    
-
-                 
                     </div>
                 </div>
             </nav>
