@@ -231,6 +231,16 @@
   margin: 10px 0; /* Espacio externo */
 }
 
+.yellow-box {
+  background-color: rgba(238, 215, 139, 0.962); /* Color de fondo gris */
+  color: rgba(18, 17, 11, 0.453); /* Color del texto */
+  padding: 15px; /* Espacio interno */
+  border-radius: 5px; /* Bordes redondeados */
+  margin: 10px 0; /* Espacio externo */
+}
+
+
+
 .blue-box {
   background-color: rgb(75, 120, 219);
   color: white;
@@ -256,6 +266,11 @@
 .info {
   flex: 10%;
 }
+
+.iconitosClasicos{
+  flex: 1%;
+}
+
 
 .navmenu {
   flex:10%; /* Ajusta este valor para asignar más o menos espacio */

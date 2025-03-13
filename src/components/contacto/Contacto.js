@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-
+import IconitosClasicos from '../iconitosClasicos/IconitosClasicos';
 function Contacto() {
   const [formData, setFormData] = useState({
     nombre: '',
@@ -300,7 +300,9 @@ function Contacto() {
           </div>
         </div>
       </div>
+      <IconitosClasicos/>
     </div>
+    
   );
 }
 

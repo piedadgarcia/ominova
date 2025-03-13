@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import MiImagServicios from "../miimagservicios/MiImagServicios"; // Corregir la ruta de importación
 import Info from '../info/Info';
+import IconitosClasicos from '../iconitosClasicos/IconitosClasicos';
 
-function MiServicios() {
+function Servicios() {
     const navigate = useNavigate();
 
     const handleConsultoriaClick = () => {
@@ -37,14 +38,16 @@ function MiServicios() {
                     color: 'black',
                     fontWeight: 'bold',
                     marginBottom: 0,
-                    width: '100%' // Asegura que el div ocupe todo el ancho del navegador
-                }}>
+                    width: '100%', // Asegura que el div ocupe todo el ancho del navegador
+                   
+  }}>
                     <div style={{
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'left',
-                        marginLeft: '50px' // Ajusta este valor según sea necesario
-                    }}>
+                        marginLeft: '50px',// Ajusta este valor según sea necesario
+                        marginTop:-250
+   }}>
                         <p>Nuestros <span style={{ color: 'grey' }}>Servicios</span></p>
                         <div style={{
                             maxWidth: '650px', // Ajusta el ancho máximo del contenedor
@@ -54,51 +57,15 @@ function MiServicios() {
                             <p style={{ color: 'grey', fontSize: '22px' }}>Nos esforzamos diariamente en mejorar nuestros productos y procesos, para que cuando llegue tu proyecto, tengamos ya definido el camino hacia el éxito.</p>
                         </div>
 
-                        <div style={{
-                            display: 'flex',
-                            flexDirection: 'row',
-                            justifyContent: 'flex-start', // Alinea los elementos hacia la izquierda
-                            alignItems: 'center', // Asegura que los elementos estén alineados verticalmente
-                            fontSize: 14,
-                            fontFamily: 'Arial',
-                            fontWeight: 'bold',
-                            padding: '20px 0px', // Reduce el padding para disminuir el espacio
-                            width: '100%', // Asegura que el div ocupe todo el ancho del navegador
-                            marginLeft: 200,
-                            marginTop: 10
-                        }}>
-                            <Link to="/contacto" className="blue-box" style={{ marginRight: 20 }}>Contáctanos</Link> {/* Ajusta el margen izquierdo */}
-                            <p style={{ marginLeft: 20 }}>Nuestros servicios</p>
-                        </div>
+                      
                     </div>
 
                     <div style={{
-                        marginTop: 100,
+                        marginTop: 190,
                         marginLeft: 130 // Añade espacio a la izquierda de la figura
                     }}>
                         <MiImagServicios />
-                    </div>
-                </div>
-
-                <div style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'center',
-                    alignItems: 'center', // Asegura que los elementos estén alineados verticalmente
-                    fontSize: 30,
-                    fontFamily: 'Arial',
-                    fontWeight: 'bold',
-                    padding: '50px 0px',
-                    width: '100%', // Asegura que el div ocupe todo el ancho del navegador
-                    marginTop: '-80px'
-                }}>
-                    <div style={{
-                        padding: '0px', // Ajusta el padding según sea necesario
-                        border: '1px solid transparent', // Crea una caja invisible
-                        width: '600px', // Ajusta el ancho según sea necesario
-                        textAlign: 'left' // Centra el texto dentro de la caja
-                    }}>
-                        <p style={{ marginLeft: -360 }}>Damos servicio al cliente antes de que nos conozca</p>
+                      
                     </div>
                 </div>
 
@@ -109,12 +76,12 @@ function MiServicios() {
                     alignItems: 'flex-start', // Alinea los elementos a la izquierda
                     fontFamily: 'Arial',
                     padding: '40px 0px',
-                    marginTop: -70,
-                    marginLeft: 0 // Ajusta este valor según sea necesario para desplazar la fila hacia la izquierda
+                    marginTop: -330,
+                    marginLeft: -650 // Ajusta este valor según sea necesario para desplazar la fila hacia la izquierda
                 }}>
 
                     <div style={{
-                        border: '1px solid lightgrey', // Borde gris claro
+                        border: '1px solid transparent', // Borde transparente
                         padding: '24px', // Ajusta el padding según sea necesario
                         backgroundColor: 'transparent', // Fondo transparente
                         maxWidth: '290px', // Ajusta el ancho máximo del contenedor para dividir el texto en dos líneas
@@ -136,7 +103,7 @@ function MiServicios() {
                     </div>
 
                     <div style={{
-                        border: '1px solid lightgrey', // Borde gris claro
+                        border: '1px solid transparent', // Borde gris claro
                         padding: '24px', // Ajusta el padding según sea necesario
                         backgroundColor: 'transparent', // Fondo transparente
                         maxWidth: '290px', // Ajusta el ancho máximo del contenedor para dividir el texto en dos líneas
@@ -157,9 +124,61 @@ function MiServicios() {
                         </div>
                     </div>
                 </div>
+
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'center',
+                    alignItems: 'center', // Asegura que los elementos estén alineados verticalmente
+                    fontSize: 28,
+                    fontFamily: 'Arial',
+                    fontWeight: 'bold',
+                    padding: '50px 0px',
+                    width: '100%', // Asegura que el div ocupe todo el ancho del navegador
+                    marginTop: '-55px' // Ajusta el margen superior según sea necesario
+                }}>
+                    <div style={{
+                        padding: '0px', // Ajusta el padding según sea necesario
+                        border: '1px solid transparent', // Crea una caja invisible
+                        width: '300px', // Ajusta el ancho según sea necesario
+                        textAlign: 'left' // Centra el texto dentro de la caja
+                    }}>
+                        <p style={{ marginLeft: -515, color:'grey'}}>Damos servicio al cliente antes de que nos conozca</p>
+                   
+                        <div style={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            justifyContent: 'flex-start', // Alinea los elementos hacia la izquierda
+                            alignItems: 'center', // Asegura que los elementos estén alineados verticalmente
+                            fontSize: 14,
+                            fontFamily: 'Arial',
+                            fontWeight: 'bold',
+                            padding: '20px 0px', // Reduce el padding para disminuir el espacio
+                            width: '100%', // Asegura que el div ocupe todo el ancho del navegador
+                            marginLeft: -120,
+                            marginTop: 10,
+                            marginBottom:25
+                        }}>
+                            <p className="yellow-box" style={{ padding:10, marginLeft:-350 , color:'stronggrey',fontSize:20}}>Transforma tu idea en realidad</p>
+                            <Link to="/contacto" className="blue-box" style={{ marginRight: 40 , marginLeft: 40,fontSize:17 }}>Contáctanos</Link> {/* Ajusta el margen izquierdo */}
+                         
+                           <p style={{ marginLeft: 20 , color:'transparent'}}>Nuestros servicios</p>
+                           </div>  
+                          
+                           <div>
+                                    
+                           </div>
+                    </div>
+                </div>
+               
             </nav>
+            <div style={{
+                        marginTop: -60,
+                       
+                    }}></div>
+                <IconitosClasicos/>  
         </div>
     );
 }
 
-export default MiServicios;
+export default Servicios;

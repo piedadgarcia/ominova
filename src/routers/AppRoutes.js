@@ -11,6 +11,8 @@ import Mi8Componente from '../components/mi8Componente/Mi8Componente';
 import Principal from '../components/main/Principal';
 import NavMenu from '../components/navmenu/NavMenu';
 
+import IconitosClasicos from '../components/iconitosClasicos/IconitosClasicos';
+
 import MiImagServicios from '../components/miimagservicios/MiImagServicios';
 import Servicios from '../components/servicios/Servicios';
 import ServicioWeb from '../components/servicioWeb/ServicioWeb';
@@ -64,7 +66,7 @@ function AppRoutes() {
                  <Route path="/usabilidad" element={<Usabilidad />} />
                  <Route path="/auditoriaweb" element={<AuditoriaWeb />} />
                  <Route path="/optimizacionSeo" element={<OptimizacionSeo />} />
-
+                 <Route path="/iconitosclasicos" element={<IconitosClasicos />} />
 
                 <Route path="/mi3Componente" element={<Mi3Componente />} />
                 <Route path="/mi4Componente" element={<Mi4Componente />} />

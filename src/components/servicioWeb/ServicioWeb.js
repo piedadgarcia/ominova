@@ -77,7 +77,7 @@ function ServicioWeb() {
               }}>
                 <div className="caja-con-lineas" style={{ width: '450px', position: 'relative' }} onClick={toggleServicioWeb}>
                   <p>Servicio Web</p>
-                  <span style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)' }}>></span>
+                  <span style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)' }}></span>
                 </div>
                 {showServicioWeb && (
                   <div style={{ marginTop: '0px', width: '450px' }}>
@@ -112,7 +112,7 @@ function ServicioWeb() {
                 )}
                 <div className="caja-con-lineas" style={{ width: '450px', position: 'relative' }} onClick={toggleConsultoria}>
                   <p>Consultoría</p>
-                  <span style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)' }}>></span>
+                  <span style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)' }}></span>
                 </div>
                 {showConsultoria && (
                   <div style={{ marginTop: '0px', width: '450px' }}>
