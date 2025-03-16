@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaWhatsapp, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import './../../App.css';
 
 function IconitosClasicos() {
   return (
@@ -18,10 +20,10 @@ function IconitosClasicos() {
         fontWeight: 'bold'
       }}>
         <a href="https://api.whatsapp.com/send?phone=+34656xxxx9&text=Chatea%20en%20WhatsApp%20con%20el%20+34%20616khjkhs56" target="_blank" rel="noopener noreferrer" style={{ marginRight: 10 }}>
-          <FaWhatsapp style={{ color: 'green' }} />
+          <FaWhatsapp style={{ color: 'green', marginRight: 10 }} />
         </a>
-        <FaLinkedin style={{ marginRight: 10,color: 'blue' }}  />
-        <FaInstagram style={{ marginRight: 10 , color: 'violet' }} />
+        <FaLinkedin style={{ marginRight: 10, color: 'blue' }} />
+        <FaInstagram style={{ marginRight: 10, color: 'violet' }} />
       </div>
       <div style={{
         fontSize: 13,
@@ -30,10 +32,25 @@ function IconitosClasicos() {
         cursor: 'pointer',
         marginLeft: 'auto' // Empuja el texto a la derecha
       }}>
-        <p>Aviso Legal Política de privacidad Política de cookies © 2025 Ominova. Todos los derechos reservados</p>
+        <p>
+        <Link to="/avisoLegal" style={{ color: '#333', textDecoration: 'none', }}>
+          Aviso Legal 
+          </Link>
+          <span style={{ margin: '0 7px' }}></span> {/* Añadir espacio entre "Aviso Legal" y "Política de Privacidad" */}
+          <Link to="/politicaDePrivacidad" style={{ color: '#333', textDecoration: 'none', marginRight: '10px' }}>
+            Política de privacidad
+          </Link>
+          <span style={{ margin: '0 5px' }}></span> {/* Añadir espacio entre "Política de Privacidad" y "Política de Cookies" */}
+          <Link to="/politicaDeCookies" style={{ color: '#333', textDecoration: 'none', marginRight: '10px' }}>
+            Política de cookies
+          </Link>
+          <span style={{ margin: '0 5px' }}></span> {/* Añadir espacio entre "Política de Cookies" y el símbolo */}
+          © 2025 Ominova. Todos los derechos reservados
+        </p>
       </div>
     </nav>
   );
 }
 
 export default IconitosClasicos;
+

@@ -11,8 +11,12 @@ import Mi8Componente from '../components/mi8Componente/Mi8Componente';
 import Principal from '../components/main/Principal';
 import NavMenu from '../components/navmenu/NavMenu';
 
+
 import IconitosClasicos from '../components/iconitosClasicos/IconitosClasicos';
 
+import AvisoLegal from '../components/avisoLegal/AvisoLegal';
+import PoliticaDeCookies from '../components/politicaDeCookies/PoliticaDeCookies';
+import PoliticaDePrivacidad from '../components/politicaDePrivacidad/PoliticaDePrivacidad';
 import MiImagServicios from '../components/miimagservicios/MiImagServicios';
 import Servicios from '../components/servicios/Servicios';
 import ServicioWeb from '../components/servicioWeb/ServicioWeb';
@@ -34,6 +38,7 @@ import Usabilidad from '../components/usabilidad/Usabilidad';
 import AuditoriaWeb from '../components/auditoriaWeb/AuditoriaWeb';
 import OptimizacionSeo from '../components/optimizacionSeo/OptimizacionSeo';
 import Inicio from '../components/inicio/Inicio';
+
 
 
 
@@ -67,6 +72,9 @@ function AppRoutes() {
                  <Route path="/auditoriaweb" element={<AuditoriaWeb />} />
                  <Route path="/optimizacionSeo" element={<OptimizacionSeo />} />
                  <Route path="/iconitosclasicos" element={<IconitosClasicos />} />
+                 <Route path="/avisoLegal" element={<AvisoLegal/>} />
+                 <Route path="/politicaDeCookies" element={<PoliticaDeCookies />} />
+                 <Route path="/politicaDePrivacidad" element={<PoliticaDePrivacidad />} />
 
                 <Route path="/mi3Componente" element={<Mi3Componente />} />
                 <Route path="/mi4Componente" element={<Mi4Componente />} />
