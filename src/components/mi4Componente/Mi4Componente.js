@@ -17,11 +17,7 @@ function Mi4Componente() {
           <strong className="texto-separado">Contáctanos</strong> <strong className="texto-separado">Nuestro compromiso</strong>
         </p>
       </div>
-      <img 
-        src="/PHOTO-2025-02-08-15-09-32.jpg" 
-        alt="Htas_IA" 
-        className="imagen-derecha"
-      />
+      
     </div>
   );
 }

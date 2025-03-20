@@ -208,6 +208,153 @@ code {
   transform: rotate(45deg); /* Rota la elipse 45 grados */
 }
 
+<<<<<<< HEAD
+=======
+.yellow-box {
+  background-color: rgba(238, 215, 139, 0.962); /* Color de fondo gris */
+  color: rgba(18, 17, 11, 0.453); /* Color del texto */
+  padding: 15px; /* Espacio interno */
+  border-radius: 5px; /* Bordes redondeados */
+  margin: 10px 0; /* Espacio externo */
+}
+
+
+
+.blue-box {
+  background-color: rgb(75, 120, 219);
+  color: white;
+  padding: 3px 1px; /* Ajusta el padding para reducir la altura */
+  border-radius: 5px;
+  text-decoration: none; /* Para eliminar el subrayado del enlace */
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  line-height: 1; /* Ajusta la altura de la línea para centrar el texto */
+}
+
+.blue-box:hover {
+  background-color: darkblue; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+.info {
+  flex: 10%;
+}
+
+.iconitosClasicos{
+  flex: 1%;
+}
+
+
+.navmenu {
+  flex:10%; /* Ajusta este valor para asignar más o menos espacio */
+  padding: 1px; /* Ajusta el padding según sea necesario */
+  /* Puedes añadir más estilos aquí según sea necesario */
+  height: 0.001vh;
+}
+
+.home {
+  flex:10%;
+}
+
+.contactanos-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre el botón y el texto */
+}
+
+
+  .texto-verde {
+    max-width: 75ch; /* Establece el ancho máximo a 75 caracteres */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0; /* Elimina el centrado horizontal */
+    margin-top: 1em; /* Ajusta este valor según sea necesario para mover el texto más abajo */
+}
+
+
+
+.imagenes-lado-a-lado {
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: 100px; /* Ajusta el tamaño según sea necesario */
+  gap: 10px; /* Espacio entre las imágenes */
+  display: flex;
+  margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
+  position: relative;
+}
+
+
+.texto-normal {
+  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  max-width: 70ch; /* Limita el ancho del párrafo a 70 caracteres */
+  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+  margin-top: -10px; /* Ajusta este valor para mover el texto más arriba */
+}
+
+
+
+.imagenes-casos-exito {
+  display: flex;
+  gap: 10px; /* Espacio entre las imágenes */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.imagen-casos-exito {
+  display: block;
+  margin: 20px auto; /* Centra la imagen horizontalmente */
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+.imagen-casos-exito {
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  margin: 10px;
+}
+
+.imagenes-casos-exito {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.texto-e-imagenes {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.contactanos-button:hover {
+  background-color: darkblue;
+}
+
+.micomponente {
+  flex: 1;
+}
+
+.portada {
+  flex:40%;
+}
+
+.mi3Componente {
+  flex: 10%;
+}
+
+
+
+
+
+>>>>>>> e5a4fef775b3a5c80e3d7bab1d777eb632073967
 .micomponente-container {
 
   justify-content: flex-start;
