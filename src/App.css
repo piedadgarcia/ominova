@@ -1,496 +1,469 @@
-
-@import url('/node_modules/@fortawesome/fontawesome-free/css/all.min.css');
-.App {
-  text-align: center;
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.imagen-ejemplo {
-  width: 300px;
-  position: absolute;
-  top: 250px;
-  left: 100px;
+/* Estilos específicos */
+.mi3-componente {
+  display: flex;
+  margin: 70px 2px;;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .imagen-ejemplo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.parrafo-nuevo {
-  color: red;
-}
-
-.texto-azul {
-  color: rgb(46, 55, 236);
-}
-
-.texto-gris {
-  color: rgb(153, 154, 171);
-}
-
-.texto-rojo {
-  color: #e10808;
-}
-
-.texto-azul-centro {
-  color: blue;
-  text-align: center;
-  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
-  font-weight: bold;
-  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+.columna-izquierda {
+  flex: 0 0 6%; /* Ajusta el tamaño de la columna izquierda según tus necesidades */
 }
 
 .columna-derecha {
   flex: 1;
+  padding-left: 20px; /* Añade un poco de espacio a la izquierda si es necesario */
+}
+
+
+.texto-azul-centro {
+  color: blue;
+  text-align: center;
 }
 
 .botones-centro {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px; /* Espacio superior */
+
 }
 
-.filtros {
-  display: flex;
-  gap: 10px; /* Espacio entre los filtros */
-}
-
-.filtro {
-  padding: 5px 15px;
-  border: 2px solid #000;
-  border-radius: 25px; /* Hace que el borde sea elipsoidal */
-  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+.contactanos-button {
+  background-color: #221faf;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
 }
 
+.nuestros-servicios {
+  margin-top: 10px;
+}
+
+.texto-verde-container {
+  color: green;
+}
+
+.texto-grande {
+  font-size: 24px;
+  margin-left: -500px;
+}
+
+.texto-normal {
+  font-size: 16px;
+  font-weight: normal; /* Mantén el texto en letra normal */
+  margin-left: -500px;
+}
+
+.texto-e-imagenes {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagenes-lado-a-ladoo {
+  display: flex;
+  margin-left:  500px;
+}
+
+.imagen-contenedor1 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.imagen-contenedor2 {
+  display: flex;
+  flex-direction: row;
+}
+.imagen-grande {
+  width: 100%;
+  height: auto;
+}
+
+.imagen-centro1 {
+  width: 120px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+  height: auto;
+  padding: 1; /* Aplica el padding según tus necesidades */
+}
+
+.imagen-lado-a-lado1 {
+  width: 50px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+  height: auto;
+  padding: 1px; /* Aplica el padding según tus necesidades */
+}
+
+
 .imagen-lado-a-lado {
-  width: 100px; /* Ajusta el tamaño según sea necesario */
-  height: 100px; /* Ajusta el tamaño según sea necesario */
-}
-
-.imagen-derecha {
-  width: 450px; /* Ajusta el tamaño según sea necesario */
+  width: 50px; /* Ajusta el tamaño de las imágenes según tus necesidades */
   height: auto;
-  margin-left: 20px; /* Espacio entre el texto y la imagen */
-  border-radius: 50%; /* Aplica la forma de elipse */
-  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro de la elipse */
+  padding: 1px; /* Aplica el padding según tus necesidades */
 }
 
-.imagen-centro {
-  width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
-  max-width: 600px; /* Ajusta el tamaño máximo de la imagen según sea necesario */
-  height: auto;
-}
-
-.texto-contenedor {
-  flex: 1; /* Permite que el contenedor de texto ocupe el espacio disponible */
-  text-align: left;/* Alinea el texto a la izquierda */
-}
-
-.texto-centro-grande-negrita {
-  font-size: 36px; /* Ajusta el tamaño del texto según sea necesario */
+.conoce-mas {
   font-weight: bold;
-  text-align: center;
-}
-.texto-centro-normal {
-  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
-  text-align: center;
-  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
 }
 
-.texto-centrado {
-  text-align: left; /* Cambia de center a left */
-  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
-  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
-  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+.empresas-colaboradoras {
+  font-weight: bold;
 }
 
-.carousel {
+.casos-de-exito {
+  font-weight: bold;
+}
+
+.texto-una-linea {
+  white-space: nowrap;
+}
+
+.descubre-casos-exito {
+  font-weight: bold;
+  margin-left: -480px;
+}
+
+.botones-navegacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-circular {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.imagenes-casos-exito {
+  display: flex;
+  justify-content: flex-start; /* Alinea las imágenes a la izquierda */
+  align-items: center;
+  margin-left: -500px; /* Ajusta este valor para moverlas más o menos a la izquierda */display: flex;
+}
+
+.imagen-casos-exito {
+  width: 25%;
+  height: auto;
+  margin: 0 10px;
+}
+
+.enfocamos-objetivos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.carousel-images {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  max-width: 600px;
+.imagen-objetivo-grande {
+  width: 50%;
+  height: auto;
+  margin-bottom: 3em;
+  margin-left: -500px; /* Ajusta este valor para mover la imagen más o menos a la izquierda */
+
 }
 
-.carousel-image {
-  width: 33.33%;
-  height: auto;
-  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
-}
-.carousel-dots {
+.puntos-navegacion {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 1em;
+  gap: 10px; /* Ajusta el espacio entre los puntos según sea necesario */
 }
 
-.carousel-dot {
+.punto {
   width: 10px;
   height: 10px;
-  margin: 0 5px;
   background-color: gray;
   border-radius: 50%;
   cursor: pointer;
 }
-.carousel-dot.active {
+
+.punto.activo {
   background-color: black;
 }
-
-.texto-grande {
-  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
-  font-weight: bold;
-  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
-  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
-}
-.texto-ajustado {
-  max-width: 70ch; /* Limita el ancho del párrafo a 70 caracteres */
-  margin: 0; /* Alinea el párrafo a la izquierda */
-  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
-  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
-}
-
-.lista-izquierda, .lista-derecha {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0 20px; /* Espacio entre la imagen y las listas */
-}
-
-.bold-pointer {
-  font-weight: bold;
-  color: #333;
-  cursor: pointer;
-  display: flex;
-  align-items: center; /* Centra el texto verticalmente */
-  padding: 5px 10px; /* Asegura que todos los enlaces tengan el mismo padding */
-  line-height: normal; /* Asegura que todos los enlaces tengan la misma altura de línea */
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #e9ebe0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(4, 4, 236);
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* filepath: /Users/piedadgarciarobledo/Documents/P_Ominova/Code/ominova/src/App.css */
-.icon-blue {
-  color: blue; /* Cambia el color del icono a azul */
-}
-
-.caja-con-lineas {
-  display: inline-block; /* Ajusta el ancho de la caja al contenido del texto */
-  border-top: 1px solid rgba(211, 211, 211, 0.468); /* Línea superior en gris claro */
-  border-bottom: 1px solid rgba(211, 211, 211, 0.468); /* Línea inferior en gris claro */
-  padding: 0cm 0; /* Ajusta el padding según sea necesario */
-  margin: 0px ; /* Ajusta el margen según sea necesario */
+.imagen-pequena {
+  width: 50%; /* Ajusta el tamaño según tus necesidades */
+  height: 50%;
 }
 
 
-.grey-box {
-  background-color: rgb(242, 236, 236); /* Color de fondo gris */
-  color: rgba(1, 0, 2, 0.453); /* Color del texto */
-  padding: 15px; /* Espacio interno */
-  border-radius: 5px; /* Bordes redondeados */
-  margin: 10px 0; /* Espacio externo */
+.elipse {
+  border-radius: 50% / 25%; /* Esto crea una elipse */
+  transform: rotate(45deg); /* Rota la elipse 45 grados */
 }
-
-.blue-box {
-  background-color: rgb(75, 120, 219);
-  color: white;
-  padding: 3px 1px; /* Ajusta el padding para reducir la altura */
-  border-radius: 5px;
-  text-decoration: none; /* Para eliminar el subrayado del enlace */
-  display: flex;
-  align-items: center; /* Centra el texto verticalmente */
-  line-height: 1; /* Ajusta la altura de la línea para centrar el texto */
-}
-
-.blue-box:hover {
-  background-color: darkblue; /* Cambia el color de fondo al pasar el ratón por encima */
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
-}
-
-.info {
-  flex: 10%;
-}
-
-.navmenu {
-  flex:10%; /* Ajusta este valor para asignar más o menos espacio */
-  padding: 1px; /* Ajusta el padding según sea necesario */
-  /* Puedes añadir más estilos aquí según sea necesario */
-  height: 0.001vh;
-}
-
-.home {
-  flex:10%;
-}
-
-.contactanos-button {
-  background-color: blue;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 20px; /* Espacio entre el botón y el texto */
-}
-
-
-  .texto-verde {
-    max-width: 75ch; /* Establece el ancho máximo a 75 caracteres */
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin: 0; /* Elimina el centrado horizontal */
-    margin-top: 1em; /* Ajusta este valor según sea necesario para mover el texto más abajo */
-}
-
-
-
-.imagenes-lado-a-lado {
-  width: 100px; /* Ajusta el tamaño según sea necesario */
-  height: 100px; /* Ajusta el tamaño según sea necesario */
-  gap: 10px; /* Espacio entre las imágenes */
-  display: flex;
-  margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
-  position: relative;
-}
-
-
-.texto-normal {
-  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
-  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
-  max-width: 70ch; /* Limita el ancho del párrafo a 70 caracteres */
-  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
-  margin-top: -10px; /* Ajusta este valor para mover el texto más arriba */
-}
-
-
-
-.imagenes-casos-exito {
-  display: flex;
-  gap: 10px; /* Espacio entre las imágenes */
-  justify-content: center; /* Centra las imágenes horizontalmente */
-  margin-top: 20px; /* Espacio superior */
-}
-
-.imagen-casos-exito {
-  display: block;
-  margin: 20px auto; /* Centra la imagen horizontalmente */
-  width: 100px; /* Ajusta el tamaño según sea necesario */
-  height: auto; /* Mantiene la proporción de la imagen */
-}
-.imagen-casos-exito {
-  width: 200px; /* Ajusta el tamaño según tus necesidades */
-  height: auto;
-  margin: 10px;
-}
-
-.imagenes-casos-exito {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-
-.texto-e-imagenes {
-  display: flex;
-  align-items: flex-start;
-}
-
-
-.contactanos-button:hover {
-  background-color: darkblue;
-}
-
-.micomponente {
-  flex: 1;
-}
-
-.portada {
-  flex:40%;
-}
-
-.mi3Componente {
-  flex: 10%;
-}
-
-
-
-
 
 .micomponente-container {
- display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+
   justify-content: flex-start;
-  height: 100%; /* Asegura que el contenedor ocupe todo el espacio asignado */
-  overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del contenedor */
-}
-
-.imagen-ejemplo {
-  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-  max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
-}
-
-.elipse-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px; /* Ajusta el tamaño según sea necesario */
-  height: 400px; /* Ajusta el tamaño según sea necesario */
-  background-color: #f0f0f0; /* Color de fondo de la elipse */
-  border-radius: 50% / 25%; /* Crea la forma de elipse */
-  overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del contenedor */
-  transform: rotate(-5deg); /* Ajusta el ángulo de rotación según sea necesario */
-}
-
-.elipse-container img { /*Asegura que la imagen se ajuste al contenedor elíptico*/
-  width: 100%;
+  align-items: flex-start;
   height: 100%;
+  overflow:hidden;
 }
 
 .circunferencia-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
   height: 400px;
-  background-color: #f0f0f0;
-  border-radius: 50%;
+  width: 400px;
+  blackground-color: #f0f0f0;
+  border-radius:  50%;
   overflow: hidden;
 }
 
-.circunferencia-container img {
-  width: 100%;
-  height: auto;
-}
-.casos-de-exito {
-  font-size: 24px; /* Ajusta el tamaño según tus necesidades */
-  font-weight: bold;
-  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
-  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
-}
-.texto-una-linea {
-  white-space: nowrap;
-}
-.descubre-casos-exito {
-  font-weight: bold;
-  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
-  margin-left: 40px; /* Ajusta este valor para mover el texto más a la derecha */
-}
-.boton-circular {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #000;
+.micomponente-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
-  margin: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #fff;
-}
-
-.boton-circular:hover {
-  background-color: #f0f0f0;
-}
-.botones-navegacion {
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
-  margin-top: 10px;
-}
-.video-texto-contenedor {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px; /* Ajusta el espacio entre el video y el texto */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
 }
 
-.video-centro {
-  max-width: 50%; /* Ajusta el tamaño del video según sea necesario */
+.micomponente-wrapper {
+  margin-top: 170px; /* Ajusta el valor según tus necesidades */
+}
+.texto-izquierda {
+  max-width: 70ch; /* Ajusta el ancho máximo a 70 caracteres */
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+.imagen-pequena1 {
+  width: 10%; /* Ajusta el tamaño según tus necesidades */
   height: auto;
 }
-
-.texto-derecha {
-  max-width: 50%; /* Ajusta el tamaño del contenedor de texto según sea necesario */
-}
-.mi7-componente {
+.conoce-mas-container {
   display: flex;
-  align-items: flex-start;
-  gap: 20px; /* Ajusta el espacio entre el texto y la imagen */
+  align-items: center;
+  margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
 }
-.imagen-lado {
-  max-width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+
+.conoce-mas-container .imagen-pequena {
+  margin-right: 10px; /* Ajusta el margen derecho según tus necesidades */
+}
+.imagenes-dentro {
+  display: flex;
+  flex-direction: column; /* Alinea las imágenes en una columna */
+  align-items: center; /* Centra las imágenes horizontalmente */
+  margin-left: -50px; /* Ajusta el margen izquierdo según tus necesidades */
+}
+
+.imagenes-dentro img {
+  margin-top: 10px; /* Ajusta el margen superior entre las imágenes según tus necesidades */
+}
+
+.imagenes-dentro {
+  display: flex;
+  flex-direction: column; /* Alinea las imágenes en una columna */
+  align-items: center; /* Centra las imágenes horizontalmente */
+  margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+}
+
+.imagenes-dentro img {
+  margin-top: 10px; /* Ajusta el margen superior entre las imágenes según tus necesidades */
+}
+.texto-e-imagen {
+  display: flex;
+  align-items: left;
+}
+
+.texto-e-imagen .texto-verde {
+  flex: 1; /* Permite que el texto ocupe el espacio disponible */
+}
+
+.texto-e-imagen cho {
+  margin-left:170px; /* Ajusta el margen izquierdo según tus necesidades */
+  width: 550px; /* Ajusta el tamaño de la imagen según tus necesidades */
   height: auto;
-  border-radius: 50%; /* Hace que la imagen tenga un contorno elíptico */
-  overflow: hidden; /* Asegura que el contenido no se desborde */
-  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
-  height: 18em; /* Ajusta la altura de la imagen */
-  margin-right: 400px; /* Ajusta este valor según sea necesario */
-  margin-top: 30px; /* Ajusta este valor según sea necesario para mover la imagen hacia abajo */
-
+  margin-top: -2cm;
 }
 
-
-
-
-.texto-contenedor {
-  flex: 1; /* Permite que el contenedor de texto ocupe el espacio disponible */
+.imagen-lado-derecho {
+  margin-left:170px; /* Ajusta el margen izquierdo según tus necesidades */
+  width: 550px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+  margin-top: -2cm;
+  margin-right:60px;
+  display: block;
 }
-.conoce-mas {
-  font-weight: bold; /* Asegura que el texto esté en negrita */
-  margin-left: 30px; /* Ajusta este valor según sea necesario para mover el texto a la derecha */
+.imagen-contenedor {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  align-items: center;
 }
-.imagen-grande {
-  height: calc(70vh - 140px); /* Ajusta la altura según sea necesario */
-  width: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
-  margin-top: -10px; /* Ajusta este valor según sea necesario */
+
+.imagen-centro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-0%, -80%);
+  width: 90px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+  margin-right: 10px; /* Ajusta el margen derecho según tus necesidades */
+}
+
+.imagen-centro3 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-0%, -80%);
+  width: 90px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+  margin-right: 10px; /* Ajusta el margen derecho según tus necesidades */
+  margin-top: -40px;
+}
+
+.imagen-centro4 {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-80%, -80%);
+  width: 90px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+  margin-right: 30px; /* Ajusta el margen derecho según tus necesidades */
+  margin-top: 40px;
+}
+.puntos-navegacion-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta según sea necesario */
+  margin-left: -1400px;
 }
 .empresas-colaboradoras {
-  margin-bottom: 50em; /* Deja un espacio de 10 líneas entre el texto "Empresas colaboradoras" y el texto "Casos de éxito" */
+  font-weight: bold;
+  margin-bottom: 900px; /* Añade un margen inferior de 30px */
 }
+.texto-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  font-weight: bold;
+  color: black; /* Ajusta el color según tus necesidades */
+  margin-top: 80px; /* Ajusta el margen superior según tus necesidades */
+}
+.texto-centro-grande {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  font-weight: bold;
+  color: black; /* Ajusta el color según tus necesidades */
+  margin-top: -20px; /* Ajusta el margen superior según tus necesidades */
+  text-align: center; /* Asegura que el texto esté centrado */
+}
+.texto-centro-normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  font-weight: normal;
+  color: black; /* Ajusta el color según tus necesidades */
+  margin-top: -30px; /* Ajusta el margen superior según tus necesidades */
+  text-align: center; /* Asegura que el texto esté centrado */
+}
+.texto-izquierda-negrita {
+  font-size: 20px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  text-align: left;
+  font-weight: bold;
+  color: black; /* Ajusta el color según tus necesidades */
+  margin-top: 90px; /* Ajusta el margen superior según tus necesidades */
+  margin-left: 90px;
+}
+.imagen-pablito {
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  margin-left: 50px; /* Ajusta la posición horizontal */
+  text-align: left; /* Asegura que esté alineada a la izquierda */
+}
+
+.imagen-pablito img {
+  width: 400px; /* Ajusta el tamaño de la imagen */
+  height: 350px; /* Ajusta el tamaño de la imagen */
+  border-radius: 70%; /* Hace que el contorno sea una elipse */
+  border: 2px solid black; /* Añade un contorno negro */
+}
+.contenedor-imagen-texto {
+  display: flex;
+  align-items: center; /* Alinea verticalmente la imagen y el texto */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  margin-left: 40px; /* Ajusta la posición horizontal del contenedor */
+}
+.texto-hablamos {
+  margin-left: 100px; /* Ajusta este valor para aumentar o reducir la separación */
+  font-size: 15px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Aplica negrita al texto */
+  color: black; /* Ajusta el color del texto */
+  margin-top: -100px; /* Ajusta el margen superior según sea necesario */
+}
+.texto-secundario {
+  font-size: 30px; /* Cambia el tamaño de la fuente a grande */
+  font-weight: bold; /* Mantén el texto en letra normal */
+  color: black; /* Ajusta el color del texto */
+  margin-top: 5px; /* Espacio entre el texto principal y el secundario */
+}
+.imagen-derecha {
+  width: 100px; /* Ajusta el ancho de la imagen */
+  height: auto; /* Mantén la proporción de la imagen */
+  border-radius: 5px; /* Opcional: redondea las esquinas */
+  margin-top: 20px; /* Ajusta el margen superior si es necesario */
+}
+.texto-contenedor {
+  margin-top: 200px; /* Ajusta este valor para mover el texto más abajo */
+}
+.imagen-oficina {
+  margin-top: 30px; /* Espacio entre "OMINOVA" y la imagen */
+  margin-left: 10px; /* Alinea la imagen a la izquierda */
+}
+
+.imagen-oficina img {
+  width: 400px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantén la proporción de la imagen */
+  border-radius: 5px; /* Opcional: redondea las esquinas */
+}
+.texto-equipo {
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-left: -500px; /* Ajusta el margen izquierdo si es necesario */
+  color: black; /* Ajusta el color del texto */
+  font-weight: bold; /* Aplica negrita al texto */
+}
+.texto-normal1 {
+  font-size: 16px;
+  font-weight: normal; /* Mantén el texto en letra normal */
+  margin-left: 0px;
+}
+.caja-texto {
+  background-color: #add8e6; /* Color celeste */
+  padding: 5px 3px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-left: -90px; /* Espacio entre la imagen y la caja */
+  margin-top: -100px;
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+  color: black; /* Color del texto */
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  justify-content: center; /* Centra el texto horizontalmente */
+  height: auto; /* Ajusta automáticamente según el contenido */
+  min-height: 30px; /* Establece una altura mínima */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+
