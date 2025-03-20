@@ -4,7 +4,7 @@ import './../../App.css';
 function Mi7Componente() {
   return (
     <div className="mi7-componente">
-            <div className="texto-contenedor">
+      <div className="texto-contenedor">
         <p className="texto-grande">
           <span className="texto-negro"><strong className="texto-negro">Nuestro compromiso</strong></span>
         </p>
@@ -37,7 +37,7 @@ function Mi7Componente() {
       <img 
         src="/IMG_3740.jpg" 
         alt="IMG_3740" 
-        className="imagen-lado"
+        className="imagen-lado imagen-pequena" // Añadir clase para hacer la imagen más pequeña
       />
     </div>
   );

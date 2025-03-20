@@ -32,14 +32,16 @@ function Principal() {
       /</div>
       */}
 
-        <div className="inicio">
-      <Inicio />
-      </div>
 
-      <div className="mi3componente">
+<div className="mi3componente">
       <Mi3Componente />   
       </div>
 
+{/*
+        <div className="inicio">
+      <Inicio />
+      </div>
+*/}
       <div className="home">
       <Home />
       </div>

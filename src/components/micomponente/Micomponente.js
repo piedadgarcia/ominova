@@ -4,8 +4,8 @@ import './../../App.css';
 function Micomponente() {
     return (
       
-            <div className="micomponente-wrapper">
-                <div className="micomponente-container">
+            <div className="">
+                <div className="micomponente-wrapper">
                     <div className="circunferencia-container">
                     <img src="/PHOTO-2025-02-08-15-02-00.jpg" 
                     alt="Htas_IA" 
