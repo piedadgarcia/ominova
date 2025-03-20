@@ -185,6 +185,35 @@
   }
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circunferencia-container img {
+  animation: spin 5s linear infinite; /* La imagen girará en 5 segundos de forma continua */
+}
+
+
+
+@keyframes spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.circunferencia-container img {
+  animation: spinY 5s linear infinite; /* La imagen girará en 5 segundos de forma continua */
+  
+}
+
 .App-header {
   background-color: #e9ebe0;
   min-height: 100vh;
@@ -283,6 +312,10 @@
   flex:10%;
 }
 
+.casosDeExito1 {
+  flex:100%
+}
+
 .contactanos-button {
   background-color: blue;
   color: white;
@@ -310,6 +343,12 @@
   display: flex;
   margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
   position: relative;
+}
+
+.imagen-CasosDeExito1 img {
+  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+  height: auto; /* Mantendrá la proporción de la imagen */
+  display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
 }
 
 

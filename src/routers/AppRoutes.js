@@ -31,7 +31,7 @@ import Branding from '../components/branding/Branding';
 import Contacto from '../components/contacto/Contacto';
 
 import Agencia from '../components/agencia/Agencia';
-import CasosExito from '../components/casosExito/CasosExito';
+import CasosExito from '../components/casosExito/CasosExito.js';
 
 import Consultoria from '../components/consultoria/Consultoria';
 import Usabilidad from '../components/usabilidad/Usabilidad';
@@ -40,7 +40,15 @@ import OptimizacionSeo from '../components/optimizacionSeo/OptimizacionSeo';
 import Inicio from '../components/inicio/Inicio';
 
 
-
+import CasosDeExito1 from '../components/casosDeExito1/CasosDeExito1';
+import CasosDeExito1Foto1 from '../components/casosDeExitoFoto1/CasosDeExitoFoto1';
+import CasosDeExito1Foto2 from '../components/casosDeExito1Foto2/CasosDeExito1Foto2';
+import CasosDeExito1Foto3 from '../components/casosDeExitoFoto3/CasosDeExitoFoto3';
+import CasosDeExito1Titulo from '../components/casosDeExito1Titulo/CasosDeExito1Titulo'
+import CasosDeExito1Retos from '../components/casosDeExito1Retos/CasosDeExito1Retos';
+import CasosDeExito1Resultados from '../components/casosDeExito1Resultados/CasosDeExito1Resultados';
+import CasosDeExito1BrandIdentity from '../components/casosDeExito1BrandIdent/CasosDeExito1BrandIdent';
+import CasosDeExito1DYDesaWeb from '../components/casosDeExito1DYDesaWeb/CasosDeExito1DYDesaWeb';
 
 
 function AppRoutes() {
@@ -50,7 +58,7 @@ function AppRoutes() {
             <Routes>
                 <Route path="*" element={<Principal />} />
                 <Route path="/info" element={<Info />} />
-                <Route path="/casos-exito" element={<CasosExito />} />
+                <Route path="/casosExito" element={<CasosExito />} />
                 <Route path="/agencia" element={<Agencia />} />
                 <Route path="/micomponente" element={<Micomponente />} />
                 <Route path="/inicio" element={<Inicio />} />
@@ -75,6 +83,25 @@ function AppRoutes() {
                  <Route path="/avisoLegal" element={<AvisoLegal/>} />
                  <Route path="/politicaDeCookies" element={<PoliticaDeCookies />} />
                  <Route path="/politicaDePrivacidad" element={<PoliticaDePrivacidad />} />
+
+                 
+                  
+                    <Route path="/casosDeExito1" element={<CasosDeExito1 />} />
+                    <Route path="/casosDeExito1Foto1" element={<CasosDeExito1Foto1 />} />
+                    <Route path="/cssosDeExito1Foto2" element={<CasosDeExito1Foto2 />} />
+                    <Route path="/csosDeExito1Foto3" element={<CasosDeExito1Foto3 />} />
+                    <Route path="/casosDeExito1Titulo" element={<CasosDeExito1Titulo />} />
+                    <Route path="/casosDeExito1Resultados" element={<CasosDeExito1Resultados />} />
+                    <Route path="/casosDeExito1BrandIdentity" element={<CasosDeExito1BrandIdentity />} />
+                    <Route path="/casosDeExito1DYDesaWeb" element={<CasosDeExito1DYDesaWeb />} />
+                    <Route path="/casosDeExito1Retos" element={<CasosDeExito1Retos />} />
+
+
+
+
+
+
+
 
                 <Route path="/mi3Componente" element={<Mi3Componente />} />
                 <Route path="/mi4Componente" element={<Mi4Componente />} />
