@@ -208,6 +208,7 @@ code {
   transform: rotate(45deg); /* Rota la elipse 45 grados */
 }
 
+
 .yellow-box {
   background-color: rgba(238, 215, 139, 0.962); /* Color de fondo gris */
   color: rgba(18, 17, 11, 0.453); /* Color del texto */
@@ -260,6 +261,10 @@ code {
   flex:10%;
 }
 
+.casosDeExito1 {
+  flex:100%
+}
+
 .contactanos-button {
   background-color: blue;
   color: white;
@@ -287,6 +292,12 @@ code {
   display: flex;
   margin-left: 40px; /* Ajusta este valor para mover las imágenes más a la derecha */
   position: relative;
+}
+
+.imagen-CasosDeExito1 img {
+  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+  height: auto; /* Mantendrá la proporción de la imagen */
+  display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
 }
 
 
@@ -366,7 +377,7 @@ code {
   align-items: center;
   height: 400px;
   width: 400px;
-  blackground-color: #f0f0f0;
+  background-color: #f0f0f0;
   border-radius:  50%;
   overflow: hidden;
 }

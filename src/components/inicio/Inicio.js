@@ -1,5 +1,6 @@
 import React from 'react';
 import Micomponente from "../micomponente/Micomponente";
+import CasosDeExito1 from '../casosDeExito1/CasosDeExito1';
 
 function Inicio() {
     return (
@@ -61,6 +62,8 @@ function Inicio() {
                 </div>
                 <p> Nuestros servicios </p>
             </div>
+
+            <CasosDeExito1 />
         </nav>
     );
 }
