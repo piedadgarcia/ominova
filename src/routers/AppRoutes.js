@@ -17,7 +17,7 @@ import IconitosClasicos from '../components/iconitosClasicos/IconitosClasicos';
 import AvisoLegal from '../components/avisoLegal/AvisoLegal';
 import PoliticaDeCookies from '../components/politicaDeCookies/PoliticaDeCookies';
 import PoliticaDePrivacidad from '../components/politicaDePrivacidad/PoliticaDePrivacidad';
-import MiImagServicios from '../components/miimagservicios/MiImagServicios';
+
 import Servicios from '../components/servicios/Servicios';
 import ServicioWeb from '../components/servicioWeb/ServicioWeb';
 import TomaDeContacto from '../components/tomaDeContacto/TomaDeContacto';
@@ -41,10 +41,7 @@ import Inicio from '../components/inicio/Inicio';
 
 
 import CasosDeExito1 from '../components/casosDeExito1/CasosDeExito1';
-import CasosDeExito1Foto1 from '../components/casosDeExitoFoto1/CasosDeExitoFoto1';
-import CasosDeExito1Foto2 from '../components/casosDeExito1Foto2/CasosDeExito1Foto2';
-import CasosDeExito1Foto3 from '../components/casosDeExitoFoto3/CasosDeExitoFoto3';
-import CasosDeExito1Titulo from '../components/casosDeExito1Titulo/CasosDeExito1Titulo'
+import CasosDeExito1Titulo from '../components/casosDeExito1Titulo/CasosDeExito1Titulo.js'
 import CasosDeExito1Retos from '../components/casosDeExito1Retos/CasosDeExito1Retos';
 import CasosDeExito1Resultados from '../components/casosDeExito1Resultados/CasosDeExito1Resultados';
 import CasosDeExito1BrandIdentity from '../components/casosDeExito1BrandIdent/CasosDeExito1BrandIdent';
@@ -63,7 +60,7 @@ function AppRoutes() {
                 <Route path="/micomponente" element={<Micomponente />} />
                 <Route path="/inicio" element={<Inicio />} />
                 <Route path="/navmenu" element={<NavMenu />} />
-                <Route path="/miimagservicios" element={<MiImagServicios />} />
+               
                 <Route path="/contacto" element={<Contacto />} />
                 <Route path="/servicios" element={<Servicios />} />   
                 <Route path="/servicioWeb" element={<ServicioWeb />} /> 
@@ -87,9 +84,6 @@ function AppRoutes() {
                  
                   
                     <Route path="/casosDeExito1" element={<CasosDeExito1 />} />
-                    <Route path="/casosDeExito1Foto1" element={<CasosDeExito1Foto1 />} />
-                    <Route path="/cssosDeExito1Foto2" element={<CasosDeExito1Foto2 />} />
-                    <Route path="/csosDeExito1Foto3" element={<CasosDeExito1Foto3 />} />
                     <Route path="/casosDeExito1Titulo" element={<CasosDeExito1Titulo />} />
                     <Route path="/casosDeExito1Resultados" element={<CasosDeExito1Resultados />} />
                     <Route path="/casosDeExito1BrandIdentity" element={<CasosDeExito1BrandIdentity />} />

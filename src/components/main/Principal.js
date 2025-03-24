@@ -2,6 +2,7 @@ import React from 'react';
 import './../../App.css';
 import Home from './../home/Home';
 import Info from './../info/Info';
+import CasosDeExito1 from '../casosDeExito1/CasosDeExito1'; 
 
 
 
@@ -46,6 +47,10 @@ function Principal() {
       <Home />
       </div>
       
+      <div className="casosDeExito1">
+      <CasosDeExito1/>   
+      </div>
+
     </div>
   );
 }
