@@ -197,79 +197,15 @@ code {
 .punto.activo {
   background-color: black;
 }
-
-.texto-grande {
-  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
-  font-weight: bold;
-  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
-  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
-}
-.texto-ajustado {
-  max-width: 70ch; /* Limita el ancho del párrafo a 70 caracteres */
-  margin: 0; /* Alinea el párrafo a la izquierda */
-  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
-  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+.imagen-pequena {
+  width: 50%; /* Ajusta el tamaño según tus necesidades */
+  height: 50%;
 }
 
-.lista-izquierda, .lista-derecha {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0 20px; /* Espacio entre la imagen y las listas */
-}
 
-.bold-pointer {
-  font-weight: bold;
-  color: #333;
-  cursor: pointer;
-  display: flex;
-  align-items: center; /* Centra el texto verticalmente */
-  padding: 5px 10px; /* Asegura que todos los enlaces tengan el mismo padding */
-  line-height: normal; /* Asegura que todos los enlaces tengan la misma altura de línea */
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #e9ebe0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(4, 4, 236);
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* filepath: /Users/piedadgarciarobledo/Documents/P_Ominova/Code/ominova/src/App.css */
-.icon-blue {
-  color: blue; /* Cambia el color del icono a azul */
-}
-
-.caja-con-lineas {
-  display: inline-block; /* Ajusta el ancho de la caja al contenido del texto */
-  border-top: 1px solid rgba(211, 211, 211, 0.468); /* Línea superior en gris claro */
-  border-bottom: 1px solid rgba(211, 211, 211, 0.468); /* Línea inferior en gris claro */
-  padding: 0cm 0; /* Ajusta el padding según sea necesario */
-  margin: 0px ; /* Ajusta el margen según sea necesario */
+.elipse {
+  border-radius: 50% / 25%; /* Esto crea una elipse */
+  transform: rotate(45deg); /* Rota la elipse 45 grados */
 }
 
 
@@ -286,6 +222,17 @@ code {
 .blue-box {
   background-color: rgb(75, 120, 219);
   color: white;
+  padding: 3px 1px; /* Ajusta el padding para reducir la altura */
+  border-radius: 5px;
+  text-decoration: none; /* Para eliminar el subrayado del enlace */
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  line-height: 1; /* Ajusta la altura de la línea para centrar el texto */
+}
+
+.white-box {
+  background-color: rgb(247, 248, 249);
+  color: rgb(16, 1, 1);
   padding: 3px 1px; /* Ajusta el padding para reducir la altura */
   border-radius: 5px;
   text-decoration: none; /* Para eliminar el subrayado del enlace */
@@ -433,7 +380,6 @@ code {
 .mi3Componente {
   flex: 10%;
 }
-
 
 
 
@@ -740,4 +686,55 @@ elipse-container {
 
 .elipse-button:hover {
   background-color: #0056b3; /* Cambia el color al pasar el cursor */
+}
+
+.circunferenciaPortada-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; /* Ajusta el tamaño de la circunferencia */
+  height: 400px; /* Ajusta el tamaño de la circunferencia */
+  border-radius: 50%; /* Hace que el contenedor sea circular */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+  background-color: #f3f3f3; /* Color de fondo opcional */
+  animation: girar 5s linear infinite; /* Aplica la animación de rotación */
+}
+
+
+.imagenPortada-circular {
+  width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+  height: 100%; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Ajusta la imagen para que se recorte dentro del contenedor */
+}
+
+@keyframes girar {
+  from {
+      transform: rotateY(0deg); /* Comienza sin rotación */
+  }
+  to {
+      transform: rotateY(360deg); /* Gira completamente en el eje Y */
+  }
+}
+/* Estilo base para los círculos de InicioAgenda */
+.texto-equipo::before {
+  content: '';
+  display: inline-block;
+  width: 10px; /* Tamaño del círculo */
+  height: 10px; /* Tamaño del círculo */
+  border-radius: 50%; /* Hace que el elemento sea circular */
+  margin-right: 10px; /* Espacio entre el círculo y el texto */
+  vertical-align: middle; /* Alinea el círculo con el texto */
+}
+
+/* Colores específicos para cada fila de InicioAgenda*/
+.equipo::before {
+  background-color: red; /* Color para "Nuestro equipo" */
+}
+
+.procesos::before {
+  background-color: blue; /* Color para "Nuestros procesos" */
+}
+
+.clientes::before {
+  background-color: green; /* Color para "Nuestros clientes" */
 }

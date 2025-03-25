@@ -47,6 +47,9 @@ import CasosDeExito1Resultados from '../components/casosDeExito1Resultados/Casos
 import CasosDeExito1BrandIdentity from '../components/casosDeExito1BrandIdent/CasosDeExito1BrandIdent';
 import CasosDeExito1DYDesaWeb from '../components/casosDeExito1DYDesaWeb/CasosDeExito1DYDesaWeb';
 
+import InicioPortada from '../components/inicioPortada/InicioPortada';
+import InicioAgencia from '../components/inicioAgencia/InicioAgencia';
+import InicioCasosDeExito from '../components/inicioCasosDeExito/InicioCasosDeExito';
 
 function AppRoutes() {
     return (
@@ -90,6 +93,9 @@ function AppRoutes() {
                     <Route path="/casosDeExito1DYDesaWeb" element={<CasosDeExito1DYDesaWeb />} />
                     <Route path="/casosDeExito1Retos" element={<CasosDeExito1Retos />} />
 
+                    <Route path="/inicioPortada" element={<InicioPortada />} />
+                    <Route path="/inicioAgencia" element={<InicioAgencia />} />
+                    <Route path="/inicioCasosDeExito" element={<InicioCasosDeExito />} />
 
 
 
