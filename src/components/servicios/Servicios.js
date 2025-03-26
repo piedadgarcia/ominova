@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import MiImagServicios from "../miimagservicios/MiImagServicios"; // Corregir la ruta de importación
+
 import Info from '../info/Info';
 import IconitosClasicos from '../iconitosClasicos/IconitosClasicos';
 
@@ -61,11 +61,31 @@ function Servicios() {
                     </div>
 
                     <div style={{
-                        marginTop: 190,
+                        marginTop: 160,
                         marginLeft: 130 // Añade espacio a la izquierda de la figura
                     }}>
-                        <MiImagServicios />
+                                    <div className="micomponente-container">
+                    <div className="elipse-container">
+                    <img src="/PHOTO-2025-02-12-12-21-57.jpg" 
+                    alt="Htas_IA" 
+                    className="elipse-container.img"/>
+                   
+                </div>
+                 {/*
+                <p>Este es mi elcomponente para poner foto en pestaña serviciosMiComFotoServicios</p>
+                </div>
+                */}
+    
+    </div>   
                       
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
                     </div>
                 </div>
 
@@ -122,7 +142,8 @@ function Servicios() {
                                 Mas info <FontAwesomeIcon icon={faArrowRight} />
                             </span>
                         </div>
-                    </div>
+            
+        </div>
                 </div>
 
                 <div style={{
@@ -170,10 +191,11 @@ function Servicios() {
                            </div>
                     </div>
                 </div>
+    
                
             </nav>
             <div style={{
-                        marginTop: -60,
+                        marginTop: -30,
                        
                     }}></div>
                 <IconitosClasicos/>  

@@ -231,6 +231,17 @@ code {
   line-height: 1; /* Ajusta la altura de la línea para centrar el texto */
 }
 
+.white-box {
+  background-color: rgb(247, 248, 249);
+  color: rgb(16, 1, 1);
+  padding: 3px 1px; /* Ajusta el padding para reducir la altura */
+  border-radius: 5px;
+  text-decoration: none; /* Para eliminar el subrayado del enlace */
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  line-height: 1; /* Ajusta la altura de la línea para centrar el texto */
+}
+
 .blue-box:hover {
   background-color: darkblue; /* Cambia el color de fondo al pasar el ratón por encima */
 }
@@ -263,12 +274,12 @@ code {
 }
 
 .casosDeExito1 {
-  flex:100%
+  display: 100%
+ 
 }
 
 .contactanos-button {
-  background-color: blue;
-  color: white;
+  background-color: blue;  
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -295,12 +306,23 @@ code {
   position: relative;
 }
 
-.imagen-CasosDeExito1 img {
-  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-  height: auto; /* Mantendrá la proporción de la imagen */
-  display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
+
+.imagen-CasoDeExito1 img {
+  height: 500px;
+  width: 1500px;
+  object-fit: contain;
+
+  margin: 0 auto;
 }
 
+.imagen-CasosDeExito1 {
+
+  display: block; /* Asegura que la imagen no tenga márgenes extra */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  padding: 0; /* Elimina padding */
+  overflow: hidden; /* Asegura que no haya desbordamiento */
+  object-fit: contain; /* Mantiene la proporción de la imagen */
+}
 
 .texto-normal {
   margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
@@ -373,29 +395,39 @@ code {
 }
 
 .circunferencia-container {
+  display: block;
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Ajusta la imagen para que se recorte dentro de la elipse */
+}
+
+.elipse-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 400px;
-  background-color: #f0f0f0;
-  border-radius:  50%;
-  overflow: hidden;
+  width: 500px; /* Ajusta el ancho de la elipse */
+  height: 400px; /* Ajusta la altura de la elipse */
+  border-radius: 50%; /* Hace que el contenedor sea una elipse */
+  background-color: #f3f3f3; /* Color de fondo de la elipse */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+ 
 }
+
+
 
 .micomponente-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   background-color: #f3f3f3;
-}
-
-.micomponente-wrapper {
   margin-top: 170px; /* Ajusta el valor según tus necesidades */
 }
+
 .texto-izquierda {
   max-width: 70ch; /* Ajusta el ancho máximo a 70 caracteres */
   text-align: left; /* Alinea el texto a la izquierda */
@@ -972,5 +1004,89 @@ video {
   display: flex;
 }
 
+elipse-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Ajusta el ancho de la elipse */
+  height: 300px; /* Ajusta la altura de la elipse */
+  border-radius: 50%; /* Hace que el contenedor sea una elipse */
+  background-color: #f3f3f3; /* Color de fondo de la elipse */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+  margin-left: 20px; /* Añade espacio entre el texto y la imagen */
+}
+
+.elipse-container img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Ajusta la imagen para que se recorte dentro de la elipse */
+}
+
+.elipse-button {
+  width: 90px; /* Ancho del botón */
+  height: 30px; /* Altura del botón */
+  border-radius: 25px; /* Hace que el botón tenga forma de elipse */
+  background-color: #7891ac; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  font-size: 16px; /* Tamaño del texto */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Animación para el cambio de color */
+}
+
+.elipse-button:hover {
+  background-color: #0056b3; /* Cambia el color al pasar el cursor */
+}
+
+.circunferenciaPortada-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; /* Ajusta el tamaño de la circunferencia */
+  height: 400px; /* Ajusta el tamaño de la circunferencia */
+  border-radius: 50%; /* Hace que el contenedor sea circular */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+  background-color: #f3f3f3; /* Color de fondo opcional */
+  animation: girar 5s linear infinite; /* Aplica la animación de rotación */
+}
 
 
+.imagenPortada-circular {
+  width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+  height: 100%; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Ajusta la imagen para que se recorte dentro del contenedor */
+}
+
+@keyframes girar {
+  from {
+      transform: rotateY(0deg); /* Comienza sin rotación */
+  }
+  to {
+      transform: rotateY(360deg); /* Gira completamente en el eje Y */
+  }
+}
+/* Estilo base para los círculos de InicioAgenda */
+.texto-equipo::before {
+  content: '';
+  display: inline-block;
+  width: 10px; /* Tamaño del círculo */
+  height: 10px; /* Tamaño del círculo */
+  border-radius: 50%; /* Hace que el elemento sea circular */
+  margin-right: 10px; /* Espacio entre el círculo y el texto */
+  vertical-align: middle; /* Alinea el círculo con el texto */
+}
+
+/* Colores específicos para cada fila de InicioAgenda*/
+.equipo::before {
+  background-color: red; /* Color para "Nuestro equipo" */
+}
+
+.procesos::before {
+  background-color: blue; /* Color para "Nuestros procesos" */
+}
+
+.clientes::before {
+  background-color: green; /* Color para "Nuestros clientes" */
+}
