@@ -72,6 +72,19 @@ function InicioAgencia() {
               }}
             >
               <strong>Nuestros procesos</strong>
+              <p
+                className="texto-normal"
+                style={{
+                  color: 'grey',
+                  textAlign: 'justify',
+                  marginTop: '10px',
+                  marginLeft: '-5px',
+                  marginBottom: '40px',
+                  width: '600px',
+                }}
+              >
+                Damos servicio al cliente incluso antes de que nos conozca. Es algo que repetimos mucho, y es que es cierto. Invertimos mucho personal y recursos en optimizar los procesos de la compañía: desde la creación de una web, una campaña o una marca, hasta la gestión diaria de la estrategia social media o del posicionamiento SEO de una tienda online. El mejor funcionamiento depende de unos procesos optimizados.
+              </p>
             </li>
             <li
               className="texto-equipo clientes"
@@ -83,6 +96,20 @@ function InicioAgencia() {
               }}
             >
               <strong>Nuestros clientes</strong>
+              <p
+                className="texto-normal"
+                style={{
+                  color: 'grey',
+                  textAlign: 'justify',
+                  marginTop: '10px',
+                  marginLeft: '-5px',
+                  marginBottom: '40px',
+                  width: '600px',
+                }}
+              >
+            Nuestro foco: los clientes. Nos obsesionamos con dar valor a los clientes, ya que sois la razón de nuestra compañía. Desde el inicio del proyecto, durante su desarrollo y en su finalización, cuidamos cada etapa con el máximo esmero para ofrecer la mejor calidad posible, tanto en el producto como en la comunicación, que es igual de importante. Nos esforzamos al máximo porque seáis partícipes en todo momento.
+
+            </p>
             </li>
           </ul>
         </div>
@@ -106,6 +133,36 @@ function InicioAgencia() {
               <img src="/SPECIALIST.jpg" alt="SPECIALIST" className="imagen-centro4" />
             </div>
           </div>
+
+
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: '100px', marginTop: '-150px' }}>
+                  <img src="/Cover1.png" alt="Imagen de portada 1" style={{ width: '550px', height: 'auto', marginBottom: '10px' }} />
+                 <img src="/Cover3.png" alt="Imagen de portada 3" style={{ width: '100px', height: 'auto', marginTop: '140px',marginLeft:'-200px', position:'absolute'}} />
+
+
+                  
+ 
+                  </div>
+                
+{/* Contenedor independiente para "Sin título" */}
+<div style={{ display: 'flex', justifyContent: 'flex-end', marginLeft: '90px', marginRight: '50px', marginTop: '50px' }}>
+  <img src="/Sin título.png" alt="Imagen sin título" style={{ width: '550px', height: 'auto', marginLeft: '100px' }} />
+</div>
+{/* Contenedor independiente para Cover2 */}
+<div style={{ position: 'relative', marginTop: '-600px', textAlign: 'center' }}>
+  <img src="/Cover2.png" alt="Imagen de portada 2" style={{ width: '100px', height: 'auto', position: 'absolute',marginLeft:'-100px',marginTop:'0px' }} />
+</div>
+
+{/* Contenedor independiente para Cover4 */}
+<div style={{ position: 'relative', marginTop: '-50px', textAlign: 'center',marginLeft:'-200px'}}>
+  <img src="/Cover4.png" alt="Imagen de portada 4" style={{ width: '100px', height: 'auto', position: 'absolute',marginLeft:'220px',marginTop:'-95px'}} />
+</div>
+
+{/* Contenedor independiente para Cover5 */}
+<div style={{ position: 'absolute', marginTop: '-150px', textAlign: 'center' }}>
+  <img src="/Cover5.png" alt="Imagen de portada 5" style={{ width: '100px', height: 'auto', position: 'absolute',marginTop:'152px',marginLeft:'515px'}} />
+</div>
+
         </div>
       </div>
     );

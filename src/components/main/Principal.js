@@ -11,7 +11,6 @@ import CasosDeExito1 from '../casosDeExito1/CasosDeExito1';
 import Micomponente from './../micomponente/Micomponente';  
 */
 import Inicio from '../inicio/Inicio';
-import Mi3Componente from './../mi3componente/Mi3Componente';
 import NavMenu from './../navmenu/NavMenu';
 import InicioCompleto from '../inicioCompleto/InicioCompleto';
 import InicioAgencia from '../inicioAgencia/InicioAgencia'
@@ -30,8 +29,6 @@ function Principal() {
       <NavMenu />
       </div>
 
-    
-
       {/*
       <div className="micomponente-container">
       <Micomponente />
@@ -39,9 +36,7 @@ function Principal() {
       */}
 
  {/*
-<div className="mi3componente">
-      <Mi3Componente />   
-      </div>
+
         */}
 
 {/*

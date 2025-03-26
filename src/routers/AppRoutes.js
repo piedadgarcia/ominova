@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Info from '../components/info/Info';
 import Micomponente from '../components/micomponente/Micomponente';
-import Mi3Componente from '../components/mi3componente/Mi3Componente';
 import Mi4Componente from '../components/mi4Componente/Mi4Componente';
 import Mi5Componente from '../components/mi5Componente/Mi5Componente';
 import Mi6Componente from '../components/mi6Componente/Mi6Componente';
@@ -105,8 +104,6 @@ function AppRoutes() {
 
 
 
-
-                <Route path="/mi3Componente" element={<Mi3Componente />} />
                 <Route path="/mi4Componente" element={<Mi4Componente />} />
                 <Route path="/mi5Componente" element={<Mi5Componente />} />
                 <Route path="/mi6Componente" element={<Mi6Componente />} />
