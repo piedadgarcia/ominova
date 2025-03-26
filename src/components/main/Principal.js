@@ -13,9 +13,11 @@ import Micomponente from './../micomponente/Micomponente';
 import Inicio from '../inicio/Inicio';
 import Mi3Componente from './../mi3componente/Mi3Componente';
 import NavMenu from './../navmenu/NavMenu';
-import InicioPortada from '../inicioPortada/InicioPortada';
+import InicioCompleto from '../inicioCompleto/InicioCompleto';
 import InicioAgencia from '../inicioAgencia/InicioAgencia'
 import InicioCasosDeExito from '../inicioCasosDeExito/InicioCasosDeExito';
+import InicioServicios from '../inicioServicios/InicioServicios';
+
 
 function Principal() {
   return (
@@ -36,35 +38,35 @@ function Principal() {
       /</div>
       */}
 
-
+ {/*
 <div className="mi3componente">
       <Mi3Componente />   
       </div>
+        */}
 
 {/*
         <div className="inicio">
       <Inicio />
       </div>
 */}
+     
+   {/*  
       <div className="home">
       <Home />
       </div>
-      
+{/*
+
+  {/*    
       <div className="casosDeExito1">
       <CasosDeExito1/>   
       </div>
+      */}
 
       <div className="inicioPortada">
-      <InicioPortada/>   
+      <InicioCompleto/>   
       </div>     
 
-      <div className="inicioAgencia">
-      <InicioAgencia/>   
-      </div>                                            
-
-      <div className="inicioCasosDeExito">
-      <InicioCasosDeExito/>   
-      </div>      
+  
 
     </div>
   );

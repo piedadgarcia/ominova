@@ -15,7 +15,7 @@ function CasosDeExito1() {
       }, []);
 
     return (
-        <div style={{ width: '100%', margin: 0, padding: 0 }}>
+        <div style={{ width: '100%', margin: 0, padding: 0, marginTop:'160px' }}>
 
             
             <div className="imagen-CasoDeExito1">

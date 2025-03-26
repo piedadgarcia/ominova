@@ -265,18 +265,27 @@ function Contacto() {
           </div>
           <div className="grey-box" style={{
             padding: 15,
-            textAlign: 'left',            fontSize: 15,
-            fontWeight: 'bold',
+            textAlign: 'left',
+            fontSize: '18px',
+            fontWeight: 'normal',
             marginRight: 65,
-            marginTop: 0,            marginBottom: 0,
+            marginTop: 0,          
+            marginBottom: 0,
             flex: 0.5
           }}>
             <div style={{
-              fontSize: 20,
+              fontSize: 16,
               color: '#333',
-              fontWeight: 'bold',
+              fontWeight: 'normal',
             }}>
-              <i className="fas fa-map-marker-alt" style={{ marginRight: 10 }}></i>
+             <a
+                href="https://www.google.com/maps?q=c/Principe+de+Vergara+210,+28040+Madrid"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                 <i className="fas fa-map-marker-alt" style={{ marginRight: 10 }}></i>
+            </a>
+              
               <span>Madrid</span>
             </div>
             <p>c/ Principe de Vergara 210, 28040 Madrid</p>
