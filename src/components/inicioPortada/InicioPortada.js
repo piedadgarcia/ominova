@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom'; // Importa Link
 
 function InicioPortada() {
     const [texto, setTexto] = useState("AYUDARTE");
@@ -85,14 +85,19 @@ function InicioPortada() {
                 marginTop: '-130px',
                  marginLeft: '230px'
             }}>
-                <div style={{
-                    marginLeft: 250
-                }}></div>
-                <p className="blue-box">Contáctanos</p>
-                <div style={{
-                    marginLeft: 20
-                }}></div>
-                <p className="white-box">Nuestros Servicios</p>
+                <div style={{ marginLeft: 250}}></div>
+
+                
+                <Link to="/contacto" className="blue-box" style={{ textDecoration: 'none', color: 'white' }}>
+          Contáctanos
+        </Link>
+
+                <div style={{ marginLeft: 20}}></div>
+
+                <Link to="/servicios" >
+                Nuestros Servicios
+                </Link>
+
             </div>
         </nav>
     );

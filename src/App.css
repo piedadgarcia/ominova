@@ -222,6 +222,13 @@ code {
   margin: 10px 0; /* Espacio externo */
 }
 
+.grey-box {
+  background-color: #f0f0f0; /* Color de fondo gris */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 15px; /* Espaciado interno */
+  margin: 10px 0; /* Margen superior e inferior */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+}
 
 
 .blue-box {
@@ -263,6 +270,10 @@ code {
 
 .iconitosClasicos{
   flex: 1%;
+}
+
+.icon-blue {
+  color: blue; /* Cambia el color según sea necesario */
 }
 
 

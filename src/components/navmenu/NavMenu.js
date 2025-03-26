@@ -36,7 +36,7 @@ function NavMenu() {
                }}></div>
         
        
-        <Link to="/mi3componente" style={{ textDecoration: 'none' }}>Ominova</Link>
+        <Link to="/inicioCompleto" style={{ textDecoration: 'none' }}>Ominova</Link>
         </div>
       
       <div style={{
@@ -44,6 +44,7 @@ function NavMenu() {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignContent: 'center',
+        alignItems: 'center', // Asegúrate de agregar esta línea
         padding: '0px 0px',
         width: '30%', // Ajusta el ancho del segundo div
         fontSize: 14,
@@ -61,7 +62,7 @@ function NavMenu() {
         <Link to="/servicios" className='bold-pointer'>
           Servicios
         </Link>
-        <Link to="/casos-exito" className='bold-pointer'>
+        <Link to="/inicioCasosDeExito" className='bold-pointer'>
           Casos de éxito
         </Link>
         <Link to="/info" className='bold-pointer'>
@@ -70,7 +71,7 @@ function NavMenu() {
         <Link to="/contacto" className='bold-pointer'>
           Contacto
         </Link>
-        <Link to="/info" className='bold-pointer blue-box'>
+        <Link to="/contacto" className='bold-pointer blue-box'>
           ¿Hablamos?
         </Link>
       </div>

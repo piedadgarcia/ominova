@@ -50,6 +50,8 @@ import CasosDeExito1DYDesaWeb from '../components/casosDeExito1DYDesaWeb/CasosDe
 import InicioPortada from '../components/inicioPortada/InicioPortada';
 import InicioAgencia from '../components/inicioAgencia/InicioAgencia';
 import InicioCasosDeExito from '../components/inicioCasosDeExito/InicioCasosDeExito';
+import InicioServicios from '../components/inicioServicios/InicioServicios';
+import InicioCompleto from '../components/inicioCompleto/InicioCompleto.js';
 
 function AppRoutes() {
     return (
@@ -96,7 +98,8 @@ function AppRoutes() {
                     <Route path="/inicioPortada" element={<InicioPortada />} />
                     <Route path="/inicioAgencia" element={<InicioAgencia />} />
                     <Route path="/inicioCasosDeExito" element={<InicioCasosDeExito />} />
-
+                    <Route path="/inicioServicios" element={<InicioServicios />} />
+                    <Route path="/inicioCompleto" element={<InicioCompleto />} />
 
 
 
