@@ -113,7 +113,7 @@ function Mi3Componente() {
                   </div>
                 </div>
               </ul>
-              <p className="conoce-mas"><strong style={{ color: 'black',marginLeft:'-450px', marginTop:'-10px' }}>Conoce más sobre nosotros</strong></p>
+              <p className="conoce-mas"><strong style={{ color: 'black',marginLeft:'-450px', marginTop:'0px' }}>Conoce más sobre nosotros</strong></p>
               <ul>
                 <li className="texto-equipo">
                   <strong>Nuestros procesos</strong>                 
@@ -126,20 +126,31 @@ function Mi3Componente() {
                   </p>
                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: '100px', marginTop: '-150px' }}>
                   <img src="/Cover1.png" alt="Imagen de portada 1" style={{ width: '550px', height: 'auto', marginBottom: '10px' }} />
-                 <img src="/Cover3.png" alt="Imagen de portada 3" style={{ width: '100px', height: 'auto', marginTop: '-10px', position:'relative'}} />
+                 <img src="/Cover3.png" alt="Imagen de portada 3" style={{ width: '100px', height: 'auto', marginTop: '140px',marginLeft:'-200px', position:'absolute'}} />
 
 
-
+                  
  
                   </div>
                 
+{/* Contenedor independiente para "Sin título" */}
+<div style={{ display: 'flex', justifyContent: 'flex-end', marginLeft: '90px', marginRight: '50px', marginTop: '50px' }}>
+  <img src="/Sin título.png" alt="Imagen sin título" style={{ width: '550px', height: 'auto', marginLeft: '100px' }} />
+</div>
+{/* Contenedor independiente para Cover2 */}
+<div style={{ position: 'relative', marginTop: '-600px', textAlign: 'center' }}>
+  <img src="/Cover2.png" alt="Imagen de portada 2" style={{ width: '100px', height: 'auto', position: 'absolute',marginLeft:'-100px',marginTop:'0px' }} />
+</div>
 
+{/* Contenedor independiente para Cover4 */}
+<div style={{ position: 'relative', marginTop: '-50px', textAlign: 'center',marginLeft:'-200px'}}>
+  <img src="/Cover4.png" alt="Imagen de portada 4" style={{ width: '100px', height: 'auto', position: 'absolute',marginLeft:'220px',marginTop:'-95px'}} />
+</div>
 
-
-
-
-
-
+{/* Contenedor independiente para Cover5 */}
+<div style={{ position: 'absolute', marginTop: '-150px', textAlign: 'center' }}>
+  <img src="/Cover5.png" alt="Imagen de portada 5" style={{ width: '100px', height: 'auto', position: 'absolute',marginTop:'152px',marginLeft:'515px'}} />
+</div>
 
                   <p className="texto-normal" style={{ color: 'black', textAlign: 'left', marginLeft: '-480px', marginTop: '50px' }}>
                     <strong>Conócenos más a fondo</strong>
@@ -152,7 +163,7 @@ function Mi3Componente() {
 
 
 
-                <li className="texto-equipo">
+                <li className="texto-equipo"style={{ marginTop: '300px' }}>
                   <strong>Nuestros clientes</strong>                 
                   </li>
                   <p className="texto-normal" style={{ color: 'black', textAlign: 'left', marginLeft: '-500px', marginTop: '10px' }}>
@@ -161,10 +172,6 @@ function Mi3Componente() {
                     para ofrecer la mejor calidad posible, tanto en el producto como en la comunicación, que es igual de importante. 
                     Nos esforzamos al máximo porque seáis partícipes en todo momento.
                   </p>
-                  <div style={{ display: 'flex', justifyContent: 'flex-end',  marginLeft: '90px',marginRight:'50px',marginTop:'-180px' }}>
-                    <img src="/Sin título.png" alt="Imagen sin título" style={{ width: '550px', height: 'auto', marginLeft: '100px' }} />
-                  </div>
-
 
 
 
@@ -177,7 +184,7 @@ function Mi3Componente() {
 
 
               </ul>
-              <p className="casos-de-exito texto-grande" style={{ color: 'black' }}>Casos de éxito</p>
+              <p className="casos-de-exito texto-grande" style={{ color: 'black',marginTop:'200px' }}>Casos de éxito</p>
               <p className="texto-normal texto-una-linea" style={{ color: 'black' }}>¿Quieres ver de qué somos capaces? Nada te lo va a contar mejor que nuestro trabajo. Aquí tienes una pequeña selección de casos.</p>
               <p className="descubre-casos-exito" style={{ color: 'black' }}>Descubre nuestros casos de éxito</p>
               <div className="botones-navegacion">
@@ -262,16 +269,7 @@ function Mi3Componente() {
           </div>
         </div>
       </div>
-      {/* Figuras Cover1 a Cover5 al final */}
-      <div className="contenedor-covers" style={{ textAlign: 'center', marginTop: '20px' }}>
-        
-        <img src="/Cover2.png" alt="Imagen de portada 2" className="imagen-cover" style={{ margin: '10px' }} />
-        <img src="/Cover3.png" alt="Imagen de portada 3" className="imagen-cover" style={{ margin: '10px' }} />
-        <img src="/Cover4.png" alt="Imagen de portada 4" className="imagen-cover" style={{ margin: '10px' }} />
-        <img src="/Cover5.png" alt="Imagen de portada 5" className="imagen-cover" style={{ margin: '10px' }} />
-      </div>
-      {/* Imagen "Sin título.png" al final */}
-
+      
       
    
         
