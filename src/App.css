@@ -58,14 +58,15 @@ code {
 }
 
 .texto-grande {
-  font-size: 24px;
+  font-size: 18px;
   margin-left: -500px;
+  color: black; /* Asegúrate de que el color sea visible */
 }
 
 .texto-normal {
   font-size: 16px;
   font-weight: normal; /* Mantén el texto en letra normal */
-  margin-left: -500px;
+  margin-left: -200px;
 }
 
 .texto-e-imagenes {
@@ -305,7 +306,7 @@ code {
   margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
   font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
   max-width: 70ch; /* Limita el ancho del párrafo a 70 caracteres */
-  margin-left: 20px; /* Ajusta este valor para mover el texto más a la derecha */
+  margin-left: -500px; /* Ajusta este valor para mover el texto más a la derecha */
   margin-top: -10px; /* Ajusta este valor para mover el texto más arriba */
 }
 
@@ -582,6 +583,10 @@ code {
 }
 .texto-contenedor {
   margin-top: 200px; /* Ajusta este valor para mover el texto más abajo */
+  
+
+
+
 }
 .imagen-oficina {
   margin-top: 30px; /* Espacio entre "OMINOVA" y la imagen */
@@ -620,5 +625,352 @@ code {
   min-height: 30px; /* Establece una altura mínima */
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
+.ptexto-azul {
+  color: blue;
+}
+.texto-grande1 {
+  font-size: 24px;
+  margin-left: 90px;
+  color: black; /* Asegúrate de que el color sea visible */
+}
+.texto-contenedor1 {
+  margin-top: 200px; /* Ajusta este valor para mover el texto más abajo */
+  margin-left: 50px; /* Mueve el texto más a la derecha */
+  max-width: 70ch; /* Limita las líneas a un máximo de 70 caracteres */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+
+
+
+}
+.texto-ajustado {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+  color: black; /* Asegúrate de que el color sea visible */
+  margin-left: 60px; /* Mueve el texto un poco más a la izquierda */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+.texto-izquierda-negrita1 {
+  font-size: 20px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  text-align: left;
+  font-weight: bold;
+  color: black; /* Ajusta el color según tus necesidades */
+  margin-top: 90px; /* Ajusta el margen superior según tus necesidades */
+  margin-left: 55px;
+}
+.imagen-arcos-container {
+  position: absolute; /* Permite posicionar la imagen de forma independiente */
+  top: 120px; /* Ajusta la posición vertical */
+  right: 60px; /* Ajusta la posición horizontal */
+}
+
+.imagen-arcos {
+  width: 500px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantén la proporción de la imagen */
+}
+.texto-contactanos,
+.texto-compromiso {
+  font-weight: bold; /* Aplica negrita a ambos textos */
+}
+
+
+.texto-separado {
+  display: flex; /* Alinea los elementos en una línea */
+  justify-content: flex-start; /* Alinea los textos a la izquierda */
+  gap: 25px; /* Espaciado entre los textos */
+  font-size: 16px; /* Ajusta el tamaño del texto */
+  color: black; /* Asegúrate de que el color sea visible */
+  margin-left: 60px; /* Mueve los textos hacia la derecha */
+}
+.texto-centro-grande-negrita {
+  font-size: 30px; /* Tamaño grande del texto */
+  font-weight: bold; /* Negrita */
+  text-align: center; /* Centra el texto horizontalmente */
+  position: absolute; /* Permite centrar el texto verticalmente */
+  top: 70%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta el texto al centro exacto */
+  color: black; /* Asegúrate de que el color sea visible */
+
+}
+.texto-centro-normal1 {
+  font-size: 16px; /* Tamaño normal del texto */
+  font-weight: normal; /* Texto sin negrita */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 160px; /* Espacio entre los dos textos */
+  color: black; /* Asegúrate de que el color sea visible */
+ 
+}
+.lista-izquierda,
+.lista-derecha {
+  margin-top: 100px; /* Ajusta este valor para mover la lista más abajo */
+
+}
+.lista-izquierda p {
+  margin-bottom: 30px; /* Ajusta este valor para aumentar o reducir el espacio */
+  margin-left: 110px;   
+}
+.texto-negrita {
+  font-weight: bold; /* Aplica negrita al texto */
+}
+.texto-seleccionado {
+  color: blue; /* Cambia el color del texto a azul */
+  font-weight: bold; /* Mantén el texto en negrita */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+.texto-independiente {
+  text-align: right; /* Mueve el texto a la derecha */
+  margin-top: 100px; /* Ajusta el margen superior */
+  font-size: 14px; /* Ajusta el tamaño del texto */
+  font-weight: bold; /* Aplica negrita al texto */
+  color: black; /* Asegúrate de que el color sea visible */
+  margin-left: 700px;
+  margin-right: 345px;
+}
+.texto-derecha {
+  text-align: right; /* Alinea el texto a la derecha */
+  margin-right: -0px; /* Ajusta este valor para mover el texto más a la derecha */
+  font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
+  color: black; /* Asegúrate de que el color sea visible */
+} 
+.texto-grande-negrita-derecha {
+  text-align: left; /* Alinea el texto a la derecha */
+  font-size: 24px; /* Ajusta el tamaño del texto para hacerlo grande */
+  font-weight: bold; /* Aplica negrita */
+  color: black; /* Asegúrate de que el color sea visible */
+  margin-top: 15px; /* Espaciado entre "Ayudar a los demás" y este texto */
+  max-width: 34ch; /* Limita las líneas a 34 caracteres */
+  line-height: 1; /* Ajusta el espaciado entre líneas */
+  margin-left: 865px;
+
+}
+.texto-normal-derecha {
+  text-align: left; /* Alinea el texto a la derecha */
+  font-size: 16px; /* Tamaño normal para el texto */
+  color: black; /* Asegúrate de que el color sea visible */
+  margin-right: -150px; /* Ajusta el margen derecho según sea necesario */
+  margin-top: 10px; /* Espaciado entre los dos textos */
+  max-width: 34ch; /* Limita las líneas a 34 caracteres */
+  line-height: 1.5; /* Espaciado entre líneas */
+  margin-left:0870px;
+  max-width: 52ch; /* Limita las líneas a un máximo de 50 caracteres */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+.video-container {
+  text-align: center; /* Centra el video horizontalmente */
+  margin: 20px 0; /* Añade espacio arriba y abajo del video */
+  margin-top: -250px; /* Reduce el margen superior para mover el video hacia arriba */
+}
+
+video {
+  max-width: 300px; /* Ajusta el ancho del video */
+  height: 500px; /* Aumenta la altura del video */
+  object-fit: cover; /* Ajusta cómo se escala el contenido del video */
+}
+.texto-negrita1 {
+  font-weight: bold; /* Aplica negrita */
+  text-align: right; /* Alinea el texto a la derecha */
+  font-size: 16px; /* Ajusta el tamaño del texto */
+  margin-bottom: 10px; /* Espaciado entre "Ayudar a los demás" y el siguiente texto */
+  color: black; /* Asegúrate de que el color sea visible */
+  margin-top: -500px;
+  margin-right: 330px;
+}
+.texto-grande2 {
+  font-size: 30px; /* Asegúrate de que el tamaño sea visible */
+  font-weight: bold; /* Aplica negrita */
+  color: black; /* Asegúrate de que el color sea visible */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 400px; /* Ajusta el margen superior */
+  margin-left: -830px;
+}
+.texto-ajustado1 {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+  color: black; /* Asegúrate de que el color sea visible */
+  margin-left: 110px; /* Mueve el texto más a la derecha */
+  max-width: 80ch; /* Limita las líneas a un máximo de 80 caracteres */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  margin-top: -15px;
+}
+.texto-centrado {
+  display: flex; /* Alinea el texto y el botón en una fila */
+  justify-content: space-between; /* Coloca el texto a la izquierda y el botón a la derecha */
+  align-items: center; /* Asegura que estén alineados verticalmente */
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-left: 110px; /* Mueve el texto más hacia la derecha */
+  font-size: 18px; /* Ajusta el tamaño del texto si es necesario */
+  font-weight: bold; /* Mantén el texto en negrita */
+  color: black; /* Asegúrate de que el color sea visible */
+  margin-top: 30px;
+  margin-bottom: -20px; /* Reduce el margen inferior */
+  max-width: 70ch; /* Limita el ancho del texto */
+}
+
+.imagen-lado {
+  margin-top: 150px; /* Ajusta este valor para bajar la imagen */
+  display: block; /* Asegúrate de que la imagen se comporte como un bloque */
+  max-width: 100%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantén la proporción de la imagen */
+}
+.texto-normal2 {
+  font-size: 16px; /* Tamaño del texto */
+  font-weight: normal; /* Mantén el texto en letra normal */
+  margin-left: 110px; /* Mueve el texto más hacia la derecha */
+  max-width: 70ch; /* Limita el ancho del párrafo a 70 caracteres */
+  line-height: 1.5; /* Espaciado entre líneas */
+  color: black; /* Asegúrate de que el color sea visible */
+  margin-top: 40px;
+}
+.texto-centrado.valores {
+  margin-top: 30px; /* Ajusta este valor para mover "Valores" más abajo */
+}
+.texto-normal3 {
+
+  margin-top: 20px; /* Reduce este valor para mover el texto más arriba */
+  margin-left: 110px; /* Mueve el texto más hacia la derecha */
+  max-width: 70ch; /* Limita el ancho del párrafo a 70 caracteres */
+}
+.boton-toggle {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: auto; /* Espaciado entre el texto y el botón */
+  color: black; /* Asegúrate de que el color sea visible */
+}
+.imagen-lado1 {
+  float: right; /* Coloca la imagen a la derecha */
+  position: relative; /* Permite ajustar la posición con left */
+  left: -50px; /* Mueve la imagen más a la izquierda */
+  margin-top: -190px; /* Ajusta el margen superior */
+  max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Mantén la proporción de la imagen */
+  border: 1px solid black; /* Añade un borde alrededor de la imagen */
+  border-radius: 50%; /* Crea un contorno elíptico recto */
+}
+.video-texto-contenedor {
+  margin-top: 200px; /* Ajusta este valor para mover todo el contenedor más abajo */
+  margin-left: 110px; /* Mueve todo el contenedor más a la derecha */
+}
+.texto-2023-actualidad {
+  position: relative; /* Permite ajustar la posición con left */
+  margin-top: -460px; /* Mantén este valor si ya está ajustado */
+  left: -320px; /* Mueve el texto más a la izquierda */
+  font-weight: bold; /* Aplica negrita al texto */
+
+}
+.texto-presente {
+  position: relative; /* Permite ajustar la posición con left */
+  left: -178px; /* Mueve el texto un poco a la izquierda */
+  font-weight: bold; /* Aplica negrita al texto */
+}
+.texto-futuro {
+  position: relative; /* Permite ajustar la posición con left */
+  left: -508px; /* Mueve el texto un poco a la izquierda */
+  font-weight: bold; /* Aplica negrita al texto */
+}
+.texto-inicios {
+  position: relative; /* Permite ajustar la posición */
+  top: -550px; /* Mueve el texto hacia arriba */
+  font-size: 20px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+  color: black; /* Asegúrate de que el color sea visible */
+  left: -505px; /* Mueve el texto un poco a la izquierda */
+  margin-top: 60px; /* Espacio entre "Inicios" y este texto */
+  margin-bottom: 25px;
+}
+.texto-normal4 {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+  color: black; /* Asegúrate de que el color sea visible */
+  margin-top: -100px; /* Espacio entre "Inicios" y este texto */
+  position: relative; /* Permite ajustar la posición */
+  left: 568px; /* Alinea con "Inicios" */
+  top: -460px; /* Mueve el texto hacia arriba */
+  max-width: 63ch; /* Limita las líneas a un máximo de 70 caracteres */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  margin-left: 100px;
+
+}
+.texto-normal5 {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+  color: black; /* Asegúrate de que el color sea visible */
+  max-width: 63ch; /* Limita las líneas a un máximo de 70 caracteres */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  margin-top: 10px; /* Espacio superior */
+  margin-bottom: 10px; /* Espacio inferior */
+  margin-left: 670px;
+}
+.texto-normal-espaciado {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+  color: black; /* Asegúrate de que el color sea visible */
+  max-width: 63ch; /* Limita las líneas a un máximo de 70 caracteres */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  margin-top: 10px; /* Espacio superior */
+  margin-bottom: 10px; /* Espacio inferior */
+  margin-left: 670px;
+}
+.texto-azul-scroll {
+  color: blue; /* Cambia el color del texto a azul */
+  transition: color 0.3s ease-in-out; /* Transición suave */
+}
+.video-centro {
+  width: 100%; /* Aumenta el ancho del video al 100% del contenedor */
+  max-width: 570px; /* Establece un ancho máximo para evitar que sea demasiado grande */
+  height: 470px; /* Mantén la proporción del video */
+  display: block; /* Asegura que el video se comporte como un bloque */
+  margin: 0 auto; /* Centra el video horizontalmente */
+  margin-left: 5px;
+}
+.carousel {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.carousel-images {
+  display: flex;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 10px; /* Espaciado entre las imágenes */
+  overflow: hidden; /* Oculta las imágenes que no están visibles */
+}
+
+.carousel-image {
+  width: 320px; /* Ajusta el tamaño de las imágenes */
+  height: auto; /* Mantén la proporción de las imágenes */
+  object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
+  border-radius: 5px; /* Bordes redondeados opcionales */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center; /* Centra los puntos horizontalmente */
+  gap: 5px; /* Espaciado entre los puntos */
+  margin-top: 40px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: blue; /* Cambia el color del punto activo */
+}
+.texto-azul1 {
+  color: blue; /* Cambia el color del texto a azul */
+  font-weight: bold; /* Opcional: Mantén el texto en negrita */
+  transition: color 0.3s ease-in-out; /* Transición suave para el cambio de color */
+}
+.texto-derecha-contenedor {
+  position: relative; /* Contenedor relativo para posicionar la línea */
+  display: flex;
+}
+
 
 

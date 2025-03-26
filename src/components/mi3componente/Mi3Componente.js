@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import './../../App.css';
 
 function Mi3Componente() {
@@ -22,6 +23,10 @@ function Mi3Componente() {
     "/IMG_3713.JPG",
     "/IMG_3715.JPG"
   ];
+
+
+
+  
   const imagenesObjetivo = [
     "/01.png",
     "/021.png",
@@ -108,25 +113,69 @@ function Mi3Componente() {
                   </div>
                 </div>
               </ul>
-              <p className="conoce-mas"><strong style={{ color: 'black',marginLeft:'-450px' }}>Conoce más sobre nosotros</strong></p>
+              <p className="conoce-mas"><strong style={{ color: 'black',marginLeft:'-450px', marginTop:'-10px' }}>Conoce más sobre nosotros</strong></p>
               <ul>
                 <li className="texto-equipo">
                   <strong>Nuestros procesos</strong>                 
                   </li>
+                  <p className="texto-normal" style={{ color: 'black', textAlign: 'left', marginLeft: '-500px', marginTop: '10px' }}>
+                    Damos servicio al cliente incluso antes de que nos conozca. Es algo que repetimos mucho, y es que es cierto. 
+                    Invertimos mucho personal y recursos en optimizar los procesos de la compañía: desde la creación de una web, 
+                    una campaña o una marca, hasta la gestión diaria de la estrategia social media o del posicionamiento SEO de 
+                    una tienda online. El mejor funcionamiento depende de unos procesos optimizados.
+                  </p>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: '100px', marginTop: '-150px' }}>
+                  <img src="/Cover1.png" alt="Imagen de portada 1" style={{ width: '550px', height: 'auto', marginBottom: '10px' }} />
+                 <img src="/Cover3.png" alt="Imagen de portada 3" style={{ width: '100px', height: 'auto', marginTop: '-10px', position:'relative'}} />
+
+
+
+ 
+                  </div>
+                
+
+
+
+
+
+
+
+
+                  <p className="texto-normal" style={{ color: 'black', textAlign: 'left', marginLeft: '-480px', marginTop: '50px' }}>
+                    <strong>Conócenos más a fondo</strong>
+                  </p>
+
+
+
+
+
+
+
+
                 <li className="texto-equipo">
                   <strong>Nuestros clientes</strong>                 
                   </li>
-                <li className="texto-equipo">
-                  <strong>Plazos de ejecución</strong>                 
-                  </li>
-                <li className="texto-equipo">
-                  <strong>Empresas colaboradoras</strong>                 
-                  </li>
+                  <p className="texto-normal" style={{ color: 'black', textAlign: 'left', marginLeft: '-500px', marginTop: '10px' }}>
+                    Nuestro foco: los clientes. Nos obsesionamos con dar valor a los clientes, ya que sois la razón de nuestra compañía. 
+                    Desde el inicio del proyecto, durante su desarrollo y en su finalización, cuidamos cada etapa con el máximo esmero 
+                    para ofrecer la mejor calidad posible, tanto en el producto como en la comunicación, que es igual de importante. 
+                    Nos esforzamos al máximo porque seáis partícipes en todo momento.
+                  </p>
+                  <div style={{ display: 'flex', justifyContent: 'flex-end',  marginLeft: '90px',marginRight:'50px',marginTop:'-180px' }}>
+                    <img src="/Sin título.png" alt="Imagen sin título" style={{ width: '550px', height: 'auto', marginLeft: '100px' }} />
+                  </div>
 
 
-                
-               
-                
+
+
+
+
+
+                  <p className="texto-normal" style={{ color: 'black', textAlign: 'left', marginLeft: '-480px', marginTop: '0px' }}>
+                    <strong>Conviértete en cliente ya</strong>
+                  </p>
+
+
               </ul>
               <p className="casos-de-exito texto-grande" style={{ color: 'black' }}>Casos de éxito</p>
               <p className="texto-normal texto-una-linea" style={{ color: 'black' }}>¿Quieres ver de qué somos capaces? Nada te lo va a contar mejor que nuestro trabajo. Aquí tienes una pequeña selección de casos.</p>
@@ -212,11 +261,23 @@ function Mi3Componente() {
             <p className="texto-normal1">Pablo estará encantado de conversar sobre tu proyecto, este es su calendario y puedes agendar tu cita en los espacios disponibles.</p>
           </div>
         </div>
+      </div>
+      {/* Figuras Cover1 a Cover5 al final */}
+      <div className="contenedor-covers" style={{ textAlign: 'center', marginTop: '20px' }}>
+        
+        <img src="/Cover2.png" alt="Imagen de portada 2" className="imagen-cover" style={{ margin: '10px' }} />
+        <img src="/Cover3.png" alt="Imagen de portada 3" className="imagen-cover" style={{ margin: '10px' }} />
+        <img src="/Cover4.png" alt="Imagen de portada 4" className="imagen-cover" style={{ margin: '10px' }} />
+        <img src="/Cover5.png" alt="Imagen de portada 5" className="imagen-cover" style={{ margin: '10px' }} />
+      </div>
+      {/* Imagen "Sin título.png" al final */}
+
+      
+   
+        
 
 
 
-
-</div>
     </div>
 
 
