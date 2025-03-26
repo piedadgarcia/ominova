@@ -10,10 +10,6 @@ function Mi5Componente() {
       <p className="texto-centro-normal1">
         Te lo cuento a través de nuestros valores
       </p>
-
-
-   
-      
     </div>
   );
 }

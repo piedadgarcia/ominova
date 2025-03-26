@@ -1,32 +1,23 @@
 import React from 'react';
 import './../../App.css';
-import Home from './../home/Home';
 import Info from './../info/Info';
-import CasosDeExito1 from '../casosDeExito1/CasosDeExito1'; 
-
-
 
 // omentario de bloque para excluir la importación de Micomponente
 /*
 import Micomponente from './../micomponente/Micomponente';  
 */
-import Inicio from '../inicio/Inicio';
 import NavMenu from './../navmenu/NavMenu';
 import InicioCompleto from '../inicioCompleto/InicioCompleto';
-import InicioAgencia from '../inicioAgencia/InicioAgencia'
-import InicioCasosDeExito from '../inicioCasosDeExito/InicioCasosDeExito';
-import InicioServicios from '../inicioServicios/InicioServicios';
-
 
 function Principal() {
   return (
-    <div className='container'>
-      <div className='info'>
-      <Info />
+    <div className="container">
+      <div className="info">
+        <Info />
       </div>
 
       <div className="navmenu">
-      <NavMenu />
+        <NavMenu />
       </div>
 
       {/*
@@ -35,17 +26,17 @@ function Principal() {
       /</div>
       */}
 
- {/*
+      {/*
 
         */}
 
-{/*
+      {/*
         <div className="inicio">
       <Inicio />
       </div>
 */}
-     
-   {/*  
+
+      {/*  
       <div className="home">
       <Home />
       </div>
@@ -58,11 +49,8 @@ function Principal() {
       */}
 
       <div className="inicioPortada">
-      <InicioCompleto/>   
-      </div>     
-
-  
-
+        <InicioCompleto />
+      </div>
     </div>
   );
 }

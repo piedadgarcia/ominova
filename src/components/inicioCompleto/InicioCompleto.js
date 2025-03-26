@@ -6,7 +6,9 @@ import InicioServicios from '../inicioServicios/InicioServicios';
 
 function InicioCompleto() {
   return (
-    <div style={{ marginTop: '100px' }}> {/* Ajusta el margen superior */}
+    <div style={{ marginTop: '100px' }}>
+      {' '}
+      {/* Ajusta el margen superior */}
       <InicioPortada />
       <InicioAgencia />
       <InicioCasosDeExito />

@@ -70,13 +70,15 @@ function Mi6Componente() {
 
         {/* Texto "Porque por encima..." */}
         <p className="texto-grande-negrita-derecha">
-          Porque por encima de todo trabajamos por ayudar a los demás y hacer el bien
+          Porque por encima de todo trabajamos por ayudar a los demás y hacer el
+          bien
         </p>
 
         {/* Texto "Valoramos cada contribución..." */}
         <p className="texto-normal-derecha">
-          Valoramos cada contribución y fomentamos relaciones basadas en el respeto mutuo. Trabajamos juntos, como
-          iguales, para lograr nuestros objetivos comunes.
+          Valoramos cada contribución y fomentamos relaciones basadas en el
+          respeto mutuo. Trabajamos juntos, como iguales, para lograr nuestros
+          objetivos comunes.
         </p>
       </div>
     </div>

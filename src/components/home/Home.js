@@ -1,22 +1,20 @@
 function Home() {
-    return (
-        <div>
-            <span style={{
-                backgroundcolor: 'blue',
-                fontSize: 16,
-                fontWeight: 'bold',
-                color: '#fff',
-                cursor: 'pointer',
-                margin: '10px'
-            }}>
+  return (
+    <div>
+      <span
+        style={{
+          backgroundcolor: 'blue',
+          fontSize: 16,
+          fontWeight: 'bold',
+          color: '#fff',
+          cursor: 'pointer',
+          margin: '10px',
+        }}
+      ></span>
 
-            </span>
-            
-                        < p > Esto es Home</p>
-        </div>
-    
-        )   
+      <p> Esto es Home</p>
+    </div>
+  );
 }
 
 export default Home;
-

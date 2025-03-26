@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Info from '../info/Info'; // Asegúrate de que la ruta sea correcta
 import './../../App.css';
 
 function OptimizacionSeo() {
@@ -58,7 +57,6 @@ function OptimizacionSeo() {
           style={{
             fontFamily: 'Arial',
             fontSize: '15px',
-            fontWeight: 'normal',
             textAlign: 'justify', // Justifica el texto
             padding: '0px 0px',
             fontWeight: 'bold',
