@@ -69,7 +69,7 @@ function NavMenu() {
         <Link to="/inicioCasosDeExito" className="bold-pointer">
           Casos de éxito
         </Link>
-        <Link to="/info" className="bold-pointer">
+        <Link to="/blog" className="bold-pointer">
           Blog
         </Link>
         <Link to="/contacto" className="bold-pointer">
