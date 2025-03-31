@@ -53,8 +53,9 @@ function InicioCasosDeExito() {
                 style={{
                   color: 'black',
                   marginLeft: '80px',
-                  marginTop: '-200px',
+                  marginTop: '800px',
                   marginBotton: '60px',
+                  fontSize: '30px', // Ajusté el tamaño de fuente del contenedor
                 }}
               >
                 Casos de éxito
@@ -68,19 +69,9 @@ function InicioCasosDeExito() {
                 }}
               >
                 ¿Quieres ver de qué somos capaces? Nada te lo va a contar mejor
-                que nuestro trabajo.{' '}
+                que nuestro trabajo. Aquí tienes una pequeña selección de casos.
               </p>
-              <p
-                className="texto-normal texto-una-linea"
-                style={{
-                  color: 'black',
-                  marginTop: '30px',
-                  marginLeft: '75px',
-                }}
-              >
-                {' '}
-                Aquí tienes una pequeña selección de casos.
-              </p>
+
               <p
                 className="descubre-casos-exito"
                 style={{
@@ -142,7 +133,7 @@ function InicioCasosDeExito() {
                       style={{
                         marginLeft: '6.5em',
                         fontWeight: 'bold',
-                        fontSize: '25px',
+                        fontSize: '26px',
                         color: 'black',
                         margingTop: '-20px',
                         marginBottom: '30px',
@@ -197,7 +188,11 @@ function InicioCasosDeExito() {
                       <span style={{ color: 'black' }}></span>
                       <Link
                         to="/agencia"
-                        style={{ textDecoration: 'none', color: 'DarkBlack' }}
+                        style={{
+                          textDecoration: 'none',
+                          color: 'DarkBlack',
+                          fontWeight: 'bold',
+                        }}
                         className="white-box"
                       >
                         Sobre nosotros
@@ -210,7 +205,7 @@ function InicioCasosDeExito() {
                   style={{
                     display: 'flex',
                     justifyContent: 'flex-start',
-                    marginLeft: '-800px',
+                    marginLeft: '-670px',
                   }}
                 >
                   <div className="puntos-navegacion">

@@ -8,12 +8,13 @@ function InicioServicios() {
         className="casos-de-exito texto-grande"
         style={{
           color: 'black',
-          marginLeft: '80px',
+          marginLeft: '100px',
           marginTop: '100px',
           marginBotton: '60px',
+          fontSize: '14px', // Cambié el tamaño de fuente para hacerlo más pequeño
         }}
       >
-        Servicios
+        SERVICIOS
       </p>
 
       <p
@@ -21,7 +22,9 @@ function InicioServicios() {
         style={{
           color: 'black',
           marginTop: '30px',
-          marginLeft: '75px',
+          marginLeft: '85px',
+          fontSize: '30px', // Cambié el tamaño de fuente para hacerlo más grande
+          fontWeight: 'bold', // Añadí esta propiedad para poner el texto en negrita
         }}
       >
         Siempre se puede dar más, y eso es lo que hacemos.
@@ -31,7 +34,7 @@ function InicioServicios() {
         style={{
           color: 'black',
           marginTop: '30px',
-          marginLeft: '75px',
+          marginLeft: '90px',
           textAlign: 'justify',
           width: ' 1250px',
         }}
@@ -61,7 +64,13 @@ function InicioServicios() {
           </div>
           <div className="texto-hablamos">
             <p>¿HABLAMOS?</p>
-            <p className="texto-secundario">
+            <p
+              className="texto-secundario"
+              style={{
+                fontSize: '28px', // Cambié el tamaño de fuente para hacerlo más pequeño
+                color: 'black',
+              }}
+            >
               El mundo pertenece a aquellos que no temen mancharse las manos
             </p>
             <p

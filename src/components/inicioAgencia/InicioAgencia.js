@@ -1,4 +1,12 @@
+import React from 'react';
+import { FaWhatsapp, FaCalendarAlt, FaArrowUp } from 'react-icons/fa'; // Importación corregida
+
 function InicioAgencia() {
+  // Función para volver al inicio de la página
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="inicioAgencia">
       <div className="texto-verde-container" style={{ textAlign: 'left' }}>
@@ -10,6 +18,7 @@ function InicioAgencia() {
             textAlign: 'left',
             marginLeft: '100px',
             marginTop: '100px',
+            fontSize: '36px', // Cambié el tamaño de fuente para hacerlo más grande
           }}
         >
           Agencia de marketing digital para líderes
@@ -33,7 +42,7 @@ function InicioAgencia() {
               color: 'black',
               marginLeft: '100px',
               marginTop: '30px',
-              fontSize: '14',
+              fontSize: '20px',
             }}
           >
             <strong>Nuestro equipo</strong>
@@ -59,23 +68,26 @@ function InicioAgencia() {
               <strong
                 style={{
                   color: 'darkgrey',
-                  fontSize: '12',
+                  fontSize: '15px',
                   marginLeft: '100px',
                   marginTop: '30px',
                 }}
               >
                 Conoce más sobre nosotros{' '}
-                <span style={{ marginLeft: '10px' }}>→</span>
+                <span style={{ marginLeft: '10px', marginRight: '300' }}>
+                  →
+                </span>
               </strong>
             </p>
           </li>
           <li
             className="texto-equipo procesos"
             style={{
+              position: 'absolute',
               color: 'black',
               marginLeft: '100px',
-              fontSize: '14',
-              marginTop: '40px',
+              fontSize: '20px',
+              marginTop: '200px',
             }}
           >
             <strong>Nuestros procesos</strong>
@@ -98,14 +110,30 @@ function InicioAgencia() {
               SEO de una tienda online. El mejor funcionamiento depende de unos
               procesos optimizados.
             </p>
+            <p className="conoce-mas">
+              <strong
+                style={{
+                  color: 'darkgrey',
+                  fontSize: '15px',
+                  marginLeft: '100px',
+                  marginTop: '30px',
+                }}
+              >
+                Conoce más a fondo{' '}
+                <span style={{ marginLeft: '10px', marginRight: '300' }}>
+                  →
+                </span>
+              </strong>
+            </p>
           </li>
           <li
             className="texto-equipo clientes"
             style={{
+              position: 'absolute',
               color: 'black',
               marginLeft: '100px',
-              fontSize: '14',
-              marginTop: '40px',
+              fontSize: '20px',
+              marginTop: '600px',
             }}
           >
             <strong>Nuestros clientes</strong>
@@ -128,6 +156,21 @@ function InicioAgencia() {
               es igual de importante. Nos esforzamos al máximo porque seáis
               partícipes en todo momento.
             </p>
+            <p className="conoce-mas">
+              <strong
+                style={{
+                  color: 'darkgrey',
+                  fontSize: '15px',
+                  marginLeft: '100px',
+                  marginTop: '30px',
+                }}
+              >
+                Conviértete en cliente ya{' '}
+                <span style={{ marginLeft: '10px', marginRight: '300' }}>
+                  →
+                </span>
+              </strong>
+            </p>
           </li>
         </ul>
       </div>
@@ -146,7 +189,14 @@ function InicioAgencia() {
           }}
         ></p>
 
-        <div className="imagen-contenedor">
+        <div
+          className="imagen-contenedor"
+          style={{
+            marginTop: '80px',
+            marginLeft: '10px',
+            marginRight: '400px',
+          }}
+        >
           <img
             src="/imagen2.png"
             alt="Imagen adicional"
@@ -172,14 +222,20 @@ function InicioAgencia() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            marginLeft: '100px',
-            marginTop: '-150px',
+            marginLeft: '-730px',
+            marginTop: '420px',
+            marginRight: '1090px',
           }}
         >
           <img
             src="/Cover1.png"
             alt="Imagen de portada 1"
-            style={{ width: '550px', height: 'auto', marginBottom: '10px' }}
+            style={{
+              width: '550px',
+              height: 'auto',
+              marginBottom: '10px',
+              position: 'absolute',
+            }}
           />
           <img
             src="/Cover3.png"
@@ -197,17 +253,21 @@ function InicioAgencia() {
         {/* Contenedor independiente para "Sin título" */}
         <div
           style={{
-            display: 'flex',
-            justifyContent: 'flex-end',
-            marginLeft: '90px',
-            marginRight: '50px',
-            marginTop: '50px',
+            position: 'relative',
+            marginTop: '80px',
+            texAlign: 'center',
           }}
         >
           <img
             src="/Sin título.png"
             alt="Imagen sin título"
-            style={{ width: '550px', height: 'auto', marginLeft: '100px' }}
+            style={{
+              width: '550px',
+              height: 'auto',
+              position: 'absolute',
+              marginLeft: '-1370px',
+              marginTop: '750px',
+            }}
           />
         </div>
         {/* Contenedor independiente para Cover2 */}
@@ -225,8 +285,8 @@ function InicioAgencia() {
               width: '100px',
               height: 'auto',
               position: 'absolute',
-              marginLeft: '-100px',
-              marginTop: '0px',
+              marginLeft: '-1240px',
+              marginTop: '1250px',
             }}
           />
         </div>
@@ -235,9 +295,9 @@ function InicioAgencia() {
         <div
           style={{
             position: 'relative',
-            marginTop: '-50px',
+            marginTop: '-30px',
             textAlign: 'center',
-            marginLeft: '-200px',
+            marginLeft: '-800px',
           }}
         >
           <img
@@ -247,8 +307,8 @@ function InicioAgencia() {
               width: '100px',
               height: 'auto',
               position: 'absolute',
-              marginLeft: '220px',
-              marginTop: '-95px',
+              marginLeft: '-220px',
+              marginTop: '590px',
             }}
           />
         </div>
@@ -268,11 +328,82 @@ function InicioAgencia() {
               width: '100px',
               height: 'auto',
               position: 'absolute',
-              marginTop: '152px',
-              marginLeft: '515px',
+              marginTop: '800px',
+              marginLeft: '1125px',
             }}
           />
         </div>
+      </div>
+
+      {/* Íconos fijos en la parte inferior derecha */}
+      <div
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '15px', // Espaciado entre los íconos
+          zIndex: 1000,
+        }}
+      >
+        {/* Ícono de WhatsApp */}
+        <a
+          href="https://wa.me/1234567890" // Reemplaza con tu número de WhatsApp
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            backgroundColor: '#25d366',
+            borderRadius: '50%',
+            width: '40px',
+            height: '40px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+            cursor: 'pointer',
+          }}
+        >
+          <FaWhatsapp style={{ color: 'white', fontSize: '20px' }} />
+        </a>
+        {/* Ícono de Calendario */}
+        <a
+          href="https://calendar.google.com/" // Reemplaza con el enlace a tu calendario
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            backgroundColor: '#4285F4',
+            borderRadius: '50%',
+            width: '40px',
+            height: '40px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+            cursor: 'pointer',
+          }}
+        >
+          <FaCalendarAlt style={{ color: 'white', fontSize: '20px' }} />
+        </a>
+        {/* Ícono para volver arriba */}
+        <button
+          onClick={scrollToTop}
+          style={{
+            backgroundColor: '#555',
+            borderRadius: '50%',
+            width: '40px',
+            height: '40px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+            cursor: 'pointer',
+            border: 'none',
+          }}
+        >
+          <FaArrowUp style={{ color: 'white', fontSize: '20px' }} />
+        </button>
       </div>
     </div>
   );
