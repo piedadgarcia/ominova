@@ -60,13 +60,14 @@ function Servicios() {
               style={{
                 maxWidth: '650px', // Ajusta el ancho máximo del contenedor
                 textAlign: 'justify', // Justifica el texto
-                margin: '0 auto', // Centra el contenedor horizontalmente
+
+                margingTop: '500px',
               }}
             >
               <p style={{ color: 'grey', fontSize: '22px' }}>
-                Nos esforzamos diariamente en mejorar nuestros productos y
-                procesos, para que cuando llegue tu proyecto, tengamos ya
-                definido el camino hacia el éxito.
+                Aplicamos diariamente la mejora contínua en productos y
+                procesos, para ofrecerte el camino al éxito cuando nos presentes
+                tu proyecto.
               </p>
             </div>
           </div>
@@ -107,9 +108,9 @@ function Servicios() {
         >
           <div
             style={{
-              border: '1px solid transparent', // Borde transparente
+              border: '4px solid white', // Borde naranja
               padding: '24px', // Ajusta el padding según sea necesario
-              backgroundColor: 'transparent', // Fondo transparente
+              backgroundColor: 'rgb(207, 210, 218)', // Fondo transparente
               maxWidth: '290px', // Ajusta el ancho máximo del contenedor para dividir el texto en dos líneas
               textAlign: 'justify', // Justifica el texto
               marginBottom: '0px',
@@ -122,11 +123,12 @@ function Servicios() {
                 color: 'black',
                 fontWeight: 'bold',
                 fontFamily: 'Arial',
+                fontSize: '20px',
               }}
             >
               Consultoría
             </p>
-            <p>Obtén asesoramiento experto para tu negocio.</p>
+            <p>Consigue asesoramiento personalizado para tu negocio.</p>
             <div
               style={{
                 fontSize: 14,
@@ -152,9 +154,9 @@ function Servicios() {
 
           <div
             style={{
-              border: '1px solid transparent', // Borde gris claro
+              border: '4px solid white', // Borde gris claro
               padding: '24px', // Ajusta el padding según sea necesario
-              backgroundColor: 'transparent', // Fondo transparente
+              backgroundColor: 'rgb(207, 210, 218)', // Fondo gris
               maxWidth: '290px', // Ajusta el ancho máximo del contenedor para dividir el texto en dos líneas
               textAlign: 'justify', // Justifica el texto
               marginBottom: '0px',
@@ -167,11 +169,12 @@ function Servicios() {
                 color: 'black',
                 fontWeight: 'bold',
                 fontFamily: 'Arial',
+                fontSize: '20px',
               }}
             >
               Servicio Web
             </p>
-            <p>Personaliza tus páginas web para llegar a tu audiencia.</p>
+            <p>Adecúa tus páginas web para llegar a tu audiencia objetivo.</p>
             <div
               style={{
                 fontSize: 14,
@@ -218,8 +221,17 @@ function Servicios() {
               textAlign: 'left', // Centra el texto dentro de la caja
             }}
           >
-            <p style={{ marginLeft: -515, color: 'grey' }}>
-              Damos servicio al cliente antes de que nos conozca
+            <p
+              style={{
+                marginLeft: -515,
+                color: 'grey',
+                fontFamily: 'Bebas Neue',
+                fontSize: 22,
+                textAlign: 'left',
+              }}
+            >
+              Estamos presentes para el cliente incluso antes de que se acerque
+              a nosotros
             </p>
 
             <div
@@ -239,11 +251,11 @@ function Servicios() {
               }}
             >
               <p
-                className="yellow-box"
+                className="yellow-box blinking-text"
                 style={{
                   padding: 10,
                   marginLeft: -350,
-                  color: 'stronggrey',
+                  color: 'black',
                   fontSize: 20,
                 }}
               >

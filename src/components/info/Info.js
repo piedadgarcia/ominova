@@ -18,7 +18,7 @@ function Info() {
           marginBottom: 0,
         }}
       >
-        Esto es compo Info 65634xxxx9 I info@ominova.com
+        65634xxxx9 I info@ominova.com
       </div>
       <div
         style={{

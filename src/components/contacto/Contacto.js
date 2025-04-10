@@ -28,19 +28,11 @@ function Contacto() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí puedes manejar el envío del formulario, por ejemplo, enviando los datos a un servidor
-    console.log('Datos del formulario:', formData);
-    // Puedes usar fetch o axios para enviar los datos a un servidor
-    // fetch('/api/contacto', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify(formData)
-    // }).then(response => {
-    //   // Maneja la respuesta del servidor
-    // });
+    e.preventDefault(); // Evita que la página se recargue
+    const mensajeEnMayusculas = formData.mensaje.toUpperCase(); // Convierte el mensaje a mayúsculas
+    console.log('Mensaje en mayúsculas:', mensajeEnMayusculas); // Muestra el mensaje en la consola
+    setFormData({ ...formData, mensaje: mensajeEnMayusculas }); // Actualiza el estado con el mensaje en mayúsculas
+    alert(`Mensaje enviado: ${mensajeEnMayusculas}`); // Muestra el mensaje en un alert (opcional)
   };
 
   return (
@@ -186,7 +178,7 @@ function Contacto() {
                 <p>Mensaje</p>
                 <textarea
                   name="mensaje"
-                  placeholder="Escribe tu mensaje"
+                  placeholder="Dinos que crees que necesitas para aumentar tus ventas y cómo crees que podemos ayudarte nosotros"
                   value={formData.mensaje}
                   onChange={handleChange}
                   style={{ width: '96%', height: '55px', padding: '10px' }}
@@ -252,7 +244,7 @@ function Contacto() {
               fontWeight: 'bold',
               padding: 15,
               marginBottom: 0,
-              marginTop: -35,
+              marginTop: -22,
             }}
           >
             <p> Otras formas de contacto</p>
@@ -275,7 +267,7 @@ function Contacto() {
                 marginTop: -25,
               }}
             >
-              <p style={{ marginBottom: '3px' }}>
+              <p style={{ marginBottom: '1px' }}>
                 ¿Quieres empezar un proyecto con nosotros?
               </p>
               <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -287,7 +279,11 @@ function Contacto() {
                 </p>
                 <FontAwesomeIcon
                   icon={faCalendarAlt}
-                  style={{ cursor: 'pointer', marginLeft: '5px' }}
+                  style={{
+                    cursor: 'pointer',
+                    marginLeft: '5px',
+                    color: 'magenta',
+                  }}
                   onClick={() => setShowCalendar(!showCalendar)}
                 />
               </div>

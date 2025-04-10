@@ -216,8 +216,8 @@ code {
 
 
 .yellow-box {
-  background-color: rgba(238, 215, 139, 0.962); /* Color de fondo gris */
-  color: rgba(18, 17, 11, 0.453); /* Color del texto */
+  background-color: rgba(191, 190, 205, 0.962); /* Color de fondo gris */
+  color: rgba(35, 199, 13, 0.453); /* Color del texto */
   padding: 15px; /* Espacio interno */
   border-radius: 5px; /* Bordes redondeados */
   margin: 10px 0; /* Espacio externo */
@@ -1083,6 +1083,23 @@ elipse-container {
       transform: rotateY(360deg); /* Gira completamente en el eje Y */
   }
 }
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking-text {
+  animation: blink 3s infinite; /* Parpadea cada 2 segundos */
+}
+
 /* Estilo base para los círculos de InicioAgenda */
 .texto-equipo::before {
   content: '';

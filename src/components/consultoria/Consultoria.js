@@ -59,12 +59,20 @@ function Consultoria() {
             }}
           >
             <p>
-              {' '}
-              En Ominova estamos especializados en diseño y desarrollo web.
-              Trabajamos con los principales CMS del mercado y ofrecemos páginas
-              web a medida, de una alta calidad y con un enorme rendimiento.
-              Tanto si buscas un ecommerce como una web corporativa sencilla,
-              nos adaptamos a tus necesidades.{' '}
+              En Ominova entendemos que cada organización enfrenta desafíos
+              únicos que requieren soluciones específicas y efectivas. Por ello,
+              ofrecemos un servicio de asesoría que se adapta a las necesidades
+              particulares de nuestros clientes, brindando apoyo experto en
+              diversas áreas clave. Nuestro equipo de asesores está comprometido
+              a proporcionar estrategias que ayuden a optimizar procesos,
+              mejorar la gestión y alcanzar los objetivos deseados. A través de
+              un enfoque colaborativo, trabajamos de la mano con nuestros
+              clientes para ofrecerles el conocimiento y las herramientas
+              necesarias para impulsar su desarrollo y éxito. A continuación,
+              detallamos los distintos ámbitos en los que ofrecemos nuestro
+              servicio de asesoría. Cada uno de ellos está diseñado para abordar
+              aspectos esenciales del funcionamiento empresarial y contribuir al
+              crecimiento sostenido de su organización.
             </p>
             <p> Descubre cómo hacemos que ocurra: </p>
           </div>
